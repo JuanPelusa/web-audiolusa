@@ -1,0 +1,526 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none; 
+    list-style-type: none; 
+}
+
+/* Body */
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+/* Header__Nav */
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+
+    #inicio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#inicio a {
+    font-size: 16px; 
+    text-decoration: none;
+    color: black;
+    font-family: 'Unbounded';
+    font-style: normal;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+}
+
+#inicio img {
+    width: 35px;
+    height: 35px;
+}
+
+.navi ul {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.links-top {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.navi a {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.search {
+    display: flex;
+    font-weight: bolder;
+}
+
+.search input {
+    width: 90px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.cart img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Main - Index */
+
+main { 
+    height: auto;    
+}  
+
+.banner {
+    height: 731px;
+    margin-top: 50px;
+    background-image: no-repeat;
+    background-size: cover;
+    animation: banner 20s infinite;
+    
+}
+
+@keyframes banner {
+    0%, 25% {
+        background-image: url(../images/cahiers-tendances-urban-is-natural_0.jpg);
+    }
+    
+    26%, 50% {
+        background-image: url(../images/ct-pop.jpg);
+    }
+
+    51%, 75% {
+        background-image: url(../images/cahiers-tendancesrock_0.jpg);
+    }
+
+    76%, 100% {
+        background-image: url(../images/ct-music_in_organic.jpg);
+    }
+}
+
+#container-main__center {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.image-article {
+    width: 800px;
+    height: 550px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.text-article {
+    display: flex;
+    align-items: end;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    margin-top: 100px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: white;
+}
+
+.image-article img {
+    width: 800px;
+    height: 550px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+/* Main - Products */
+
+.main-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.cards-container__products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.product-card {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.product-card img {
+    background-color: white;
+}
+
+.model {
+    margin: 5px 0px 20px 0px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.info {
+    text-align: center;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0px 10px 0px;
+    
+}
+
+.button {
+    width: 75px;
+    height: 25px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.product-card img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Main - Contact */
+
+.container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oxygen';
+    font-style: normal;
+    color: white;
+    padding: 15px;
+}
+
+.img-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    height: 650px;
+}
+
+.img-contact img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.location {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.location h4 {
+    margin: 10px 0px;
+}
+
+.location p {
+    margin: 5px 0px;
+}
+
+.location iframe {
+    width: 200px;
+    height: 200px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(211, 211, 211);
+}
+
+.fill-fields {
+    padding-left: 5px;
+    height: 35px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+.query {
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button {
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+.form-button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.logo-audiolusa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-audiolusa img {
+    height: 100px;
+    align-items: center;
+}
+
+/* Main - About-Us */
+
+#container-about__img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.about-img {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.about-img img {
+    border-radius: 10px;
+}
+
+.container-about__text {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+}
+
+.about-about h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-mision h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-about {
+    width: 600px;
+    height: 450px;
+    line-height: 2;
+}
+
+.about-mision {
+    width: 600px;
+    height: 450px;
+    line-height: 2;
+}
+
+/* Services */
+
+#container-services__main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.upper-bottom__container {
+    width: 600px;
+    height: 450px;
+    margin: 20px;
+}
+
+.services-text__container {
+    width: 600px;
+    height: 450px;
+    margin: 20px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 2;
+    color: white;
+}
+
+.upper-bottom__container img {
+    width: 600px;
+    height: 450px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.upper-bottom__container iframe {
+    width: 600px;
+    height: 450px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    height: 70px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copy {
+    margin-left: 15px;
+    color: black;
+}
+
+.center-foot {
+    font-weight: bold;
+    margin-right: 15px;
+    
+}
+
+.center-foot a {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: black;
+    margin: 5px;
+}
+
+.social {
+    margin-right: 15px;
+}
+
+.facelogo {
+    width: 35px;
+    height: 35px;
+    color: black;
+}
+
+.twlogo {
+    width: 30px;
+    height: 30px;
+    padding-left: 10px ;
+}
+
+.instalogo {
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.ytlogo {
+    width: 30px;
+    height: 33px;
+    padding-left: 10px;
+}
+
