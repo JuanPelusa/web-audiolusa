@@ -12,7 +12,6 @@ body {
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 6, 1fr;
-    grid-template-rows: ;
     grid-template-areas: 
         "header header header header header header"
         "main main main main main main"
