@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -11,98 +12,124 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/Logo-fluff-std.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-    crossorigin="anonymous">
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Audiolusa</title>
   </head>
     <body>
       <header>
-        <div id="inicio">
-          <div>
-            <a href="./index.html"><img src="./images/fluff-std.png" alt="">Audiolusa</a>
-          </div>
-        </div>          
-      <div class="links-top">  
-        <nav class="navi">
-          <ul>
-            <li>
-              <a href="./pages/speakers.html">Speakers</a>
-            </li>
-            <li>
-              <a href="./pages/headphones.html">Headphones</a>
-            </li>
-            <li>
-              <a href="./pages/wireless.html">Wireless</a>
-            </li>
-            <li>
-              <a href="./pages/services.html">Services</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="search">
-        <ul>
-          <li>
-            <input type="search" placeholder="Search">
-          </li>
-        </ul>
-        <div class="cart">
-          <img src="./images/white-shopping-cart.png" alt="">
+        <div class="container-fluid header">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div>
+              <a href="index.html" class="navbar-brand"><img class="fluff" src="./images/fluff-std.png" alt="">Audiolusa</a>
+            </div>
+              <button type="checkbox" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 
+                    3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                </span>
+              </button>
+              <div id="navmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/speakers.html">Speakers</a>
+                    <span class="mob-arrow"></span>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/headphones.html">Headphones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/wireless.html">Wireless</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/services.html">Services</a>
+                  </li>
+                  <li>
+                    <input class="navbar-search" type="text" placeholder="search">
+                  </li>
+                  <li>
+                    <img class="navbar-cart" src="./images/white-shopping-cart.png" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </div>
       </header>
-    <main> 
-      <div class="banner">
-        </div>
-          <section id="container-main__center">
-            <div class="image-article">
-              <img src="./images/bowers-and-wilkins-700-Series-Signature.png" alt="">
-            </div>
-            <div class="text-article">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, atque esse! Adipisci expedita odio, fugit cupiditate, 
-                laudantium impedit fuga autem optio exercitationem esse atque sequi culpa voluptate. 
-                Provident, doloremque laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Enim adipisci est ut natus libero, sed nulla earum. 
-                Reiciendis impedit quaerat quam inventore cum eligendi, illum earum consequatur commodi aut dolorem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, atque esse! Adipisci expedita odio, fugit cupiditate, 
-                laudantium impedit fuga autem optio exercitationem esse atque sequi culpa voluptate. 
-                Provident, doloremque laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Enim adipisci est ut natus libero, sed nulla earum. 
-                Reiciendis impedit quaerat quam inventore cum eligendi, illum earum consequatur commodi aut dolorem!
-              </p>
-            </div>
-            <div class="text-article">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, atque esse! Adipisci expedita odio, fugit cupiditate, 
-                laudantium impedit fuga autem optio exercitationem esse atque sequi culpa voluptate. 
-                Provident, doloremque laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Enim adipisci est ut natus libero, sed nulla earum. 
-                Reiciendis impedit quaerat quam inventore cum eligendi, illum earum consequatur commodi aut dolorem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, atque esse! Adipisci expedita odio, fugit cupiditate, 
-                laudantium impedit fuga autem optio exercitationem esse atque sequi culpa voluptate. 
-                Provident, doloremque laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Enim adipisci est ut natus libero, sed nulla earum. 
-                Reiciendis impedit quaerat quam inventore cum eligendi, illum earum consequatur commodi aut dolorem!
-              </p>
-            </div>
-          <div class="image-article">
-            <img src="./images/Reference-2018-Floorstanding-Cabinet.png" alt="">
+    <main>
+      <div class="container-fluid main">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
           </div>
-        </section>   
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/cahiers-tendances-urban-is-natural_0.jpg" class="d-block w-100" alt="...">
+              </div>
+                <div class="carousel-item">
+                  <img src="./images/cahiers-tendancesrock_0.jpg" class="d-block w-100" alt="...">
+                </div>
+              <div class="carousel-item">
+                <img src="./images/ct-music_in_organic.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>        
+        </div>
+        <div class="b-divider"></div>
+        <div class="container">
+            <div class="row">
+              <div class="col img-1">
+                <img class="img-fluid" src="./images/bowers-and-wilkins-700-Series-Signature.png" alt="">
+              </div>
+                <div class="col text-1">
+                  <p class="img-fluid">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
+                  Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
+                  </p>
+                </div>
+              <div class="b-divider"></div>
+            <div class="col text-2"> 
+              <p class="img-fluid">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
+                Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
+              </p>
+            </div>
+            <div class="col img-2">
+              <img class="img-fluid" src="./images/Reference-2018-Floorstanding-Cabinet.png" alt="">
+            </div>
+          </div>
+          </div>
+        </div>
       </main>
     <footer>
-      <ul class="copy">
-        <li>&#169 JP'S Copyright 2023</li>
-      </ul>
-      <div class="center-foot">
-        <a href="./pages/contact.html">Contact</a>&nbsp; &nbsp;
-        <a href="./pages/about-us.html">About Us</a>
-      </div>
-      <div class="social">    
-        <a href="https://es-la.facebook.com/"><img src="./images/face.png" alt="facebook" class="facelogo"></a>
-        <a href="https://twitter.com/?lang=es"><img src="./images/twitter.png" alt="twitter" class="twlogo"></a>
-        <a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="instagram" class="instalogo"></a>
-        <a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="youtube" class="ytlogo"></a>
+      <div class="container-fluid-foot">
+        <div class="copy">
+          <ul>
+            <li>&#169 JP'S Copyright 2023</li>
+          </ul>
+        </div>
+          <div class="center-foot">
+            <a href="./pages/contact.html">Contact</a>&nbsp; &nbsp;
+            <a href="./pages/about-us.html">About Us</a>
+          </div>
+        <div class="social">    
+          <a href="https://es-la.facebook.com/"><img src="./images/face.png" alt="facebook" class="facelogo"></a>
+          <a href="https://twitter.com/?lang=es"><img src="./images/twitter.png" alt="twitter" class="twlogo"></a>
+          <a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="instagram" class="instalogo"></a>
+          <a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="youtube" class="ytlogo"></a>
+        </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
