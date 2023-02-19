@@ -207,7 +207,7 @@ main {
 }
 
 @media only screen and (max-width: 992px) {
-    .left, .right, .left img, .right img, .rigth p {
+    .left, .right, .right img, .rigth p {
         font-size: 14px;
         justify-content: center;
         text-align: center;
@@ -229,6 +229,14 @@ main {
         justify-content: center;
         text-align: center;
         margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .left img {
+        justify-content: center;
+        text-align: center;
+
     }
 }
 
