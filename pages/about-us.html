@@ -18,42 +18,45 @@
   </head>
     <body>
       <header>
-        <section id="inicio">
-        <div>
-          <img src="../images/fluff-std.png" alt="">
-        </div>
-        <div>
-          <a href="../index.html">Audiolusa</a>
-        </div>
-        </section>          
-        <section class="links-top">  
-          <nav class="navi">
-            <ul>
-              <li>
-                <a href="../pages/speakers.html">Speakers</a>
-              </li>
-              <li>
-                <a href="../pages/headphones.html">Headphones</a>
-              </li>
-              <li>
-                <a href="../pages/wireless.html">Wireless</a>
-              </li>
-              <li>
-                <a href="../pages/services.html">Services</a>
-              </li>
-            </ul>
+        <div class="container-fluid header">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div>
+              <a href="../index.html" class="navbar-brand"><img class="fluff" src="../images/fluff-std.png" alt="">Audiolusa</a>
+            </div>
+              <button type="checkbox" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 
+                    3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                </span>
+              </button>
+              <div id="navmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./speakers.html">Speakers</a>
+                    <span class="mob-arrow"></span>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./headphones.html">Headphones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./wireless.html">Wireless</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./services.html">Services</a>
+                  </li>
+                  <li>
+                    <input class="navbar-search" type="text" placeholder="search">
+                  </li>
+                  <li>
+                    <img class="navbar-cart" src="../images/white-shopping-cart.png" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
-        </section>
-        <section class="search">
-          <ul>
-            <li>
-              <input type="search" placeholder="Search">
-            </li>
-          </ul>
-          <div class="cart">
-            <img src="../images/white-shopping-cart.png" alt="">
-          </div>
-        </section>
+        </div>
       </header>
       <main>
         <div class="main-contents">
@@ -95,22 +98,24 @@
           </div>
         </section>
       </main>
-    <footer>
-      <ul class="copy">
-        <li>&#169 JP'S Copyright 2023</li>
-      </ul>
-      <div class="center-foot">
-        <a href="../pages/contact.html">Contact</a>&nbsp; &nbsp;
-        <a href="../pages/about-us.html">About Us</a>
-      </div>
-      <div class="social">    
-        <a href="https://es-la.facebook.com/"><img src="../images/face.png" alt="facebook" class="facelogo"></a>
-        <a href="https://twitter.com/?lang=es"><img src="../images/twitter.png" alt="twitter" class="twlogo"></a>
-        <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="instagram" class="instalogo"></a>
-        <a href="https://www.youtube.com/"><img src="../images/youtube.png" alt="youtube" class="ytlogo"></a>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <footer>
+        <div class="container-fluid-foot">
+          <div class="social">    
+            <a href="https://es-la.facebook.com/"><img src="../images/facebook.png" alt="facebook" class="facelogo"></a>
+            <a href="https://twitter.com/?lang=es"><img src="../images/twitter.png" alt="twitter" class="twlogo"></a>
+            <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="instagram" class="instalogo"></a>
+            <a href="https://www.youtube.com/"><img src="../images/youtubelogo.png" alt="youtube" class="ytlogo"></a>
+          </div>
+            <div class="center-foot">
+              <a href="./contact.html">Contact</a>&nbsp; &nbsp;
+              <a href="./about-us.html">About Us</a>
+            </div>
+          <div class="copy">
+            <p>&#169 JP'S Copyright 2023</p>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
