@@ -186,38 +186,49 @@ main {
 
 }
 
-.row>* {
-    flex-shrink: none;
-    align-items: center;
-    width: 100%;
-    max-width: none;
-    padding-right: none;
-    padding-left: none;
-    margin-top: 20px;
+.left {
+    margin: 40px 40px 20px 0px;
 }
 
-.text-1, .text-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.left p, {
+    margin-top: 200px;
 }
 
-.img-1 {
-    display: flex;
-    margin: 20px 20px 0px 0px;
+.left h2 {
+    margin-top: 180px;
 }
 
-.img-2 {
-    display: flex;
-    margin: 0px 0px 0px 20px;
+.right {
+    margin: 40px 0px 20px 40px;
+}
+
+.right img {
+    margin-top: 200px;
 }
 
 @media only screen and (max-width: 992px) {
-    .text-1, .text-2, .img-1, .img-2 {
+    .left, .right, .left img, .right img, .rigth p {
         font-size: 14px;
-        margin: 0px;
         justify-content: center;
-        align-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .left p {
+        font-size: 14px;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .left h2 {
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
     }
 }
 
