@@ -19,9 +19,12 @@
     <body>
       <header>
         <div class="container-fluid header">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div>
-              <a href="index.html" class="navbar-brand"><img class="fluff" src="./images/fluff-std.png" alt="">Audiolusa</a>
+              <a href="index.html"><img class="logo-nav d-flex d-xl-none" src="./images/Logo-fluff-std.png" alt=""></a>
+            </div>
+            <div>
+              <a href="index.html" class="navbar-brand"><img class="fluff" src="./images/logo.png" alt=""></a>
             </div>
               <button type="checkbox" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="icon">
@@ -59,65 +62,108 @@
         </div>
       </header>
     <main>
-      <div class="container-fluid main">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
-          </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/cahiers-tendances-urban-is-natural_0.jpg" class="d-block w-100" alt="...">
-              </div>
-                <div class="carousel-item">
-                  <img src="./images/cahiers-tendancesrock_0.jpg" class="d-block w-100" alt="...">
-                </div>
-              <div class="carousel-item">
-                <img src="./images/ct-music_in_organic.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>        
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 3"></button>
         </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="./images/cahiers-tendances-urban-is-natural_0.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./images/cahiers-tendancesrock_0.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./images/ct-music_in_organic.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./images/ct-pop.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>        
         <div class="b-divider"></div>
         <div class="container-fluid">
+          <div class="row left-row">
+            <div class="col left">
+              <div>
+                <img class="img-fluid left-img" src="./images/PHANTOM-M-375_SUB-K-14-F_home-cinema_1000x600.webp" alt="">
+              </div>
+            </div>
+            <div class="col left-text">
+              <div>
+                <h2 class="title-index__left">Minima deleniti</h2>
+              </div>
+              <div>
+                <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
+                  Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">  
+          <div class="row right-row">
+            <div class="col right">
+              <div>
+                <h2 class="title-index__right">Minima deleniti</h2>
+              </div>
+              <div>
+                <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
+                  Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
+                </p>
+              </div>
+            </div>
+            <div class="col right">
+              <div>
+                <img class="img-fluid right-img" src="./images/Reference-2018-Floorstanding-Cabinet.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="b-divider"></div>
+        <div class="container text-center">
+          <h5>- Brands we proudly sell -</h5>
           <div class="row">
-              <div class="col left">
-                <div>
-                  <img class="img-fluid" src="./images/PHANTOM-M-375_SUB-K-14-F_home-cinema_1000x600.webp" alt="">
-                </div>
-                  <div>
-                    <h2>Minima deleniti</h2>
-                  </div>
-                <div>
-                  <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
-                    Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
-                  </p>
-                </div>
-              </div>
-              <div class="col right">
-                <div>
-                  <h2>Minima deleniti</h2>
-                </div>
-                  <div>
-                    <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
-                      Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
-                    </p>
-                  </div>
-                <div>
-                  <img class="img-fluid" src="./images/Reference-2018-Floorstanding-Cabinet.png" alt="">
-                </div>
-              </div>
+            <div class="col logo">
+              <img src="./images/brand (1).gif" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/klipsch.png" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/dali-red.png" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/bw-logo-4017.png" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/yamaha-logo.png" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/hifiman.webp" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/polkaudio.png" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/mcintosh.webp" alt="">
+            </div>
+            <div class="col logo">
+              <img src="./images/marantz-logo.gif" alt="">
+            </div>
           </div>
         </div>
       </main>

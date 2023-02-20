@@ -20,19 +20,26 @@ body {
     background-color: black;
 }
 
+.logo-nav {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar-brand img {
-    width: 30px;
-    height: 30px;
+    height: 45px;
     margin-bottom: 3px;
 }
 
+
 .navbar-brand {
-    padding-top: var(--bs-navbar-brand-padding-y);
-    padding-bottom: var(--bs-navbar-brand-padding-y);
-    margin-right: var(--bs-navbar-brand-margin-end);
+    padding-top: none;
+    padding-bottom: none;
+    margin-right: none;
     font-size: var(--bs-navbar-brand-font-size);
     color: white;
-    font-family: 'Unbounded';
+    font-family: 'Valencia';
     font-size: 16px;
     text-decoration: none;
     white-space: nowrap;
@@ -63,7 +70,7 @@ body {
 #navmenu input {
     margin: 9px 5px 0px 10px;
     width: 100px;
-    border: 3px solid cadetblue;
+    border: 3px solid #5f9ea0;
     border-radius: 10px;
     text-indent: 5px;
 }
@@ -110,6 +117,10 @@ body {
 
 
 @media only screen and (max-width: 992px) {
+    .navbar-brand {
+        display: none;
+    }
+    
     .navbar-brand img {
         width: 25px;
         height: 25px;
@@ -141,6 +152,10 @@ main {
     height: auto;
 }  
 
+.carousel-inner {
+    border-radius: 25px 25px 10px 10px ;
+}
+
 .carousel-control-prev {
     opacity: .7;
 }
@@ -164,47 +179,110 @@ main {
     font-size: 18px;
     font-family: 'Oxygen';
     font-style: normal;
-    font-weight: lighter;
-
+    font-weight: lighter;;
 }
 
-.left {
-    margin: 40px 40px 20px 0px;
+.left-row, .right-row {
+    margin: 10px 0px 0px 0px;
+    
 }
 
-.left h2 {
-    margin-top: 260px;
+.title-index__left {
+    margin: 100px 0px 0px 300px;
 }
 
-.right {
-    margin: 40px 0px 20px 40px;
+.title-index__right {
+    margin: 150px 0px 0px 250px;
 }
 
-.right img {
-    margin-top: 200px;
+
+.text-1{
+    margin-left: 300px;
+    height: 100px;
+    width: 400px;
+    text-align: start;
+    letter-spacing: 1px;
+}
+
+.text-2 {
+    margin-left: 250px;
+    height: 100px;
+    width: 400px;
+    text-align: start;
+    letter-spacing: 1px;
+}
+
+.text-center h5 {
+    margin-top: 20px;
+    color: white;
+}
+
+.left-img, .right-img {
+    border-radius: 7px;
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.logo img {
+    background-color: white;
+    align-items: center;
+    height: 70px;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 992px) {
-    .left, .right, .right img, .rigth p {
+    .left-row {
+        flex-direction: column;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .right-row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .title-index__left {
+        margin: 10px 0px 10px 0px;
+        font-size: 16px;
+    }
+    
+    .title-index__right {
+        margin: 10px 0px 10px 0px;
+        font-size: 16px;
+    }
+    
+    .text-1{
+        width: 250px;
+        height: 150px;
+        margin-left: 0px;
         font-size: 14px;
-        justify-content: center;
-        text-align: center;
-        margin: 0px;
+        letter-spacing: 1px;
     }
-    .left p {
+    
+    .text-2 {
+        width: 250px;
+        height: 150px;
+        margin-left: 0px;
         font-size: 14px;
-        justify-content: center;
-        text-align: center;
-        margin: 10px;
+        letter-spacing: 1px;
     }
-    .left h2 {
+    .logo{
         justify-content: center;
-        text-align: center;
-        margin: 0px;
+        align-items: center;
+        margin: 5px 0px 5px 0px;
     }
-    .left img {
-        justify-content: center;
-        text-align: center;
+    
+    .logo img {
+        background-color: white;
+        align-items: center;
+        height: 50px;
+        border-radius: 50%;
     }
 }
 
@@ -610,7 +688,6 @@ main {
     justify-content: space-evenly;
     align-items: center;
     height: 40px;
-    margin-bottom: 15px;
     color: white;
     font-family: 'Oxygen';
     font-style: normal;
@@ -662,7 +739,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 130px;
+        height: 150px;
         font-family: 'Oxygen';
         font-style: normal;
         font-weight: lighter;
