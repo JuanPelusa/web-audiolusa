@@ -1,3 +1,6 @@
+/* Reset */
+
+
 * {
     margin: 0%;
     padding: 0%;
@@ -5,7 +8,9 @@
     text-decoration: none;
 }
 
+
 /* Body */
+
 
 body {
     background-color: black;
@@ -13,7 +18,9 @@ body {
     background-attachment: fixed;
 }
 
+
 /* Header__Nav */
+
 
 .bg-light {
     --bs-bg-opacity: 0;
@@ -28,10 +35,9 @@ body {
 }
 
 .navbar-brand img {
-    height: 45px;
+    height: 70px;
     margin-bottom: 3px;
 }
-
 
 .navbar-brand {
     padding-top: none;
@@ -65,7 +71,6 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
-
 
 #navmenu input {
     margin: 9px 5px 0px 10px;
@@ -115,38 +120,45 @@ body {
     box-shadow: none;
 }
 
+/* Responsive */
 
 @media only screen and (max-width: 992px) {
-    .navbar-brand {
-        display: none;
+.navbar-brand {
+    display: none;
     }
     
-    .navbar-brand img {
-        width: 25px;
-        height: 25px;
-        margin-bottom: 8px;
+.navbar-brand img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 8px;
     }
-    .navbar-brand {
-        font-size: 14px;
+
+.navbar-brand {
+    font-size: 14px;
     }
-    #navmenu ul {
-        align-items: center;
+
+#navmenu ul {
+    align-items: center;
     }
-    .nav-link {
-        font-size: 14px;
+
+.nav-link {
+    font-size: 14px;
     }
-    #navmenu input, img {
-        align-self: center;
-        margin: 5px 0px 10px 0px;
+
+#navmenu input, img {
+    align-self: center;
+    margin: 5px 0px 10px 0px;
     }
-    #navmenu input, .placeholder::first-letter {
-        text-align: center;
-        font-weight: bold;
+
+#navmenu input, .placeholder::first-letter {
+    text-align: center;
+    font-weight: bold;
     }
 }
 
 
 /* Main - Index */
+
 
 main { 
     height: auto;
@@ -195,7 +207,6 @@ main {
     margin: 150px 0px 0px 250px;
 }
 
-
 .text-1{
     margin-left: 300px;
     height: 100px;
@@ -234,59 +245,68 @@ main {
     border-radius: 50%;
 }
 
+/* Responsive */
+
 @media only screen and (max-width: 992px) {
-    .left-row {
-        flex-direction: column;
-        margin: 10px 0px 0px 0px;
+.carousel-inner {
+    border-radius: 5px 5px 5px 5px ;
     }
 
-    .right-row {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 0px 0px 0px;
+.left-row {
+    flex-direction: column;
+    margin: 10px 0px 0px 0px;
+    }
+
+.right-row {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
     }
     
-    .title-index__left {
-        margin: 10px 0px 10px 0px;
-        font-size: 16px;
+.title-index__left {
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
     }
     
-    .title-index__right {
-        margin: 10px 0px 10px 0px;
-        font-size: 16px;
+.title-index__right {
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
     }
     
-    .text-1{
-        width: 250px;
-        height: 150px;
-        margin-left: 0px;
-        font-size: 14px;
-        letter-spacing: 1px;
+.text-1{
+    width: 250px;
+    height: 150px;
+    margin-left: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
     }
     
-    .text-2 {
-        width: 250px;
-        height: 150px;
-        margin-left: 0px;
-        font-size: 14px;
-        letter-spacing: 1px;
+.text-2 {
+    width: 250px;
+    height: 150px;
+    margin-left: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
     }
-    .logo{
-        justify-content: center;
-        align-items: center;
-        margin: 5px 0px 5px 0px;
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
     }
     
-    .logo img {
-        background-color: white;
-        align-items: center;
-        height: 50px;
-        border-radius: 50%;
+.logo img {
+    background-color: white;
+    align-items: center;
+    height: 50px;
+    border-radius: 50%;
     }
 }
 
+
 /* Main - Products */
+
 
 .main-contents {
     display: flex;
@@ -370,7 +390,6 @@ main {
     margin-bottom: 20px;
 }
 
-
 .info button {
     width: 75px;
     height: 25px;
@@ -396,246 +415,79 @@ main {
     display: flex;
 }
 
+/* Responsive */
+
 @media only screen and (max-width: 992px) {
-    .main-contents {
-        flex-direction: row;
-        justify-content: center;
-        color: white;
-        padding: 5px;
-        font-family: 'Oxygen';
-        font-style: normal;
-        font-weight: lighter;
-    }
-    
-    .main-contents h3 {
-        padding: 5px;
-        color: white;
-        font-weight: lighter;
-        font-size: 16px;
-    }
-    
-    .display-info{
-        color: white;
-        font-family: 'Oxygen';
-        font-style: normal;
-        font-weight: lighter;
-        font-size: 14px;
-    }
-    
-    .cards-container__products {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
-    }
-    
-    .product-card {
-        position: relative;
-        width:250px;
-        margin:35px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-
-    
-    .info h4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    
-    .info p {
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
-    
-    
-    .info button {
-        width: 55px;
-        height: 25px;
-        font-size: 14px;
-        border-radius: 20px;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .product-card img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-
-/* Main - Contact */
-
-.container-contact {
-    display: flex;
-    flex-wrap: wrap;
+.main-contents {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Oxygen';
-    font-style: normal;
+    justify-content: center;
     color: white;
-    padding: 15px;
-}
-
-.img-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 850px;
-    height: 650px;
-}
-
-.img-contact img {
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.location {
-    width: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 5px;
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: lighter;
-}
-
-.location h4 {
-    margin: 10px 0px;
-}
-
-.location p {
-    margin: 5px 0px;
-}
-
-.location iframe {
-    width: 200px;
-    height: 200px;
-}
-
-.form-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 300px;
+    }
+    
+.main-contents h3 {
+    padding: 5px;
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+    }
+    
+.display-info{
+    color: white;
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: lighter;
     font-size: 14px;
-    text-align: center;
-    margin: 10px 0px;
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: rgb(211, 211, 211);
-}
-
-.fill-fields {
-    padding-left: 5px;
-    height: 35px;
-    margin: 10px 0px 10px 0px;
-    border-radius: 5px;
-}
-
-.query {
-    margin: 10px 0px 10px 0px;
-    border-radius: 5px;
-}
-
-.container-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-button {
-    width: 60px;
-    height: 25px;
-    text-align: center;
-    margin: 10px 0px 10px 0px;
-    border-radius: 5px;
-}
-
-.form-button:hover {
-    background-color: darkred;
-    color: white;
-}
-
-.logo-audiolusa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-audiolusa img {
-    height: 100px;
-    align-items: center;
-}
-
-/* Main - About-Us */
-
-#container-about__img {
+    }
+    
+.cards-container__products {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    }
+    
+.product-card {
+    position: relative;
+    width:250px;
+    margin:35px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-}
-
-.about-img {
-    border: 1px solid;
-    border-radius: 10px;
-}
-
-.about-img img {
-    border-radius: 10px;
-}
-
-.container-about__text {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: lighter;
+    }
+    
+.info h4 {
     font-size: 16px;
-    color: white;
-    padding: 15px;
+    margin-bottom: 10px;
+    }
+    
+.info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    }
+    
+.info button {
+    width: 55px;
+    height: 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    }
+    
+.product-card img {
+    width: 250px;
+    height: 250px;
+    }
 }
 
-.about-about h3 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.about-mision h3 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.about-about {
-    width: 600px;
-    height: 450px;
-    line-height: 2;
-}
-
-.about-mision {
-    width: 600px;
-    height: 450px;
-    line-height: 2;
-}
 
 /* Services */
+
 
 #container-services__main {
     width: 100%;
@@ -679,8 +531,204 @@ main {
     border-radius: 10px;
 }
 
-/* Footer */
 
+/* Main - Contact */
+
+
+#contact-block, .contact-form {
+    border-radius: 10px;
+}
+
+.img-form img {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.contact-form h2 {
+    background-color: #ffffff;
+}
+
+.single-form{
+    background: #fff;
+}
+
+.right, .left {
+	position: relative;
+}
+
+.contact-form h3 {
+    margin: 7px 10px 12px 10px;
+}
+
+.form-control {
+    margin-bottom: 5px;
+    padding: 5px;
+	border: 1px solid #000000;
+}
+
+.btn, .btn-primary button {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.form-items button {
+	border: 1px solid #5f9ea0;
+	border-radius: 10px;
+	width: 60px;
+	color: #fff;
+    margin: 0px 7px;
+    text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.form-items button:hover{
+    background-color: #252525;
+}
+
+.card-title-a h4 {
+    margin-bottom: 30px;
+}
+
+.card-title-a {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.card-title-b {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.location iframe {
+    width: 340px;
+    height: 200px;
+    margin-top: 35px;
+}
+
+.card-text {
+    color: white;
+}
+
+.logo-audiolusa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-audiolusa img {
+    height: 200px;
+    align-items: center;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:992px){
+.img-form img {
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px 0px 10px 0px;
+    }    
+}
+
+
+/* Main - About-Us */
+
+
+.about-us {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#about-img {
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container-about__text {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin: 40px 0px 90px 0px;
+    padding: 15px;
+}
+
+.about-about h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-mision h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-about {
+    padding: 0px 15px 0px 15px;
+    text-align: start;
+    line-height: 1.5;
+}
+
+.about-mision {
+    padding: 0px 15px 0px 15px;
+    text-align: start;
+    line-height: 1.5;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 992px) {
+.container-about__text {
+    flex-direction: column;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    color: white;
+    margin: 20px 0px 20px 0px;
+    padding: 15px;
+    }
+    
+.about-about h3 {
+    font-size: 16px;
+    text-align: center;
+    }
+    
+.about-mision h3 {
+    font-size: 16px;
+    text-align: center;
+    }
+    
+.about-about {
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    line-height: 1.5;
+    }
+    
+.about-mision {
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    line-height: 1.5;
+    }
+}
+
+
+/* Footer */
 
 
 .container-fluid-foot {
@@ -733,49 +781,53 @@ main {
     padding-left: 10px;
 }
 
+/* Responsive */
+
 @media only screen and (max-width: 992px) {
-    .container-fluid-foot {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        font-family: 'Oxygen';
-        font-style: normal;
-        font-weight: lighter;
-        font-size: 14px;
-        width: 100%;
+.container-fluid-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    width: 100%;
     }
 
-    .copy {
-        padding-top: 10px;
-        padding-bottom: 0px;
+.copy {
+    padding-top: 10px;
+    padding-bottom: 0px;
     }
-    .center-foot {
-        font-weight: lighter;
-        margin: 10px 0px 5px 0px;
-        align-items: center;
-    }
-    
-    .facelogo {
-        width: 20px;
-        height: 20px;
+
+.center-foot {
+    font-weight: lighter;
+    margin: 10px 0px 5px 0px;
+    align-items: center;
     }
     
-    .twlogo {
-        width: 28px;
-        height: 20px;
-        padding-left: 10px ;
+.facelogo {
+    width: 20px;
+    height: 20px;
     }
     
-    .instalogo {
-        width: 28px;
-        height: 20px;
-        padding-left: 10px;
+.twlogo {
+    width: 28px;
+    height: 20px;
+    padding-left: 10px ;
     }
-    .ytlogo {
-        width: 35px;
-        height: 20px;
-        padding-left: 10px;
+    
+.instalogo {
+    width: 28px;
+    height: 20px;
+    padding-left: 10px;
+    }
+
+.ytlogo {
+    width: 35px;
+    height: 20px;
+    padding-left: 10px;
     }
 }

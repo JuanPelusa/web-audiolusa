@@ -21,10 +21,10 @@
         <div class="container-fluid header">
           <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div>
-              <a href="../index.html"><img class="logo-nav d-flex d-xl-none" src="../images/Logo-fluff-std.png" alt=""></a>
+              <a href="../index.html"><img class="logo-nav d-flex d-xl-none" src="../images/fluff-std-logo-big.png" alt=""></a>
             </div>
             <div>
-              <a href="../index.html" class="navbar-brand"><img class="fluff" src="../images/fluff-std.png" alt="">Audiolusa</a>
+              <a href="../index.html" class="navbar-brand"><img class="fluff" src="../images/logo.png" alt=""></a>
             </div>
               <button type="checkbox" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="icon">
@@ -62,45 +62,78 @@
         </div>
       </header>
     <main>
-      <div class="main-contents">
-        <h3>-</h3>
-        <h3>Contact Us</h3>
-        <h3>-</h3>
-      </div>
-      <section>
-        <div class="container-contact">
-          <div class="img-contact">
-            <img src="../images/img store.png" alt="">
+      <div class="container">
+        <div class="row contact">
+          <div class="main-contents">
+            <h3>-</h3>
+            <h3>Contact Us</h3>
+            <h3>-</h3>
           </div>
-          <div>
-            <form action="" method="" enctype="multipart/form-data">
-              <div class="form-container">
-                <input class="fill-fields" type="name" placeholder="Whats your name?">
-                <textarea class="query" name="query" id="" cols="35" rows="15" placeholder="how can we help you"></textarea>
-                <input class="fill-fields" type="email" placeholder="Tell us your email">
-                <div class="container-button">
-                  <input class="form-button" type="submit" width="" value="Send">
+            <section>
+              <div class="form-area">
+                <div class="container form-area">
+                  <div id="contact-block" class="row single-form g-0">
+                    <div class="col-sm-12 col-lg-6">
+                      <div class="img-form">
+                        <img class="img-fluid contactImgForm" src="../images/store.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                      <div class="contact-form">
+                        <div>
+                          <h3>Tell us how can we help you</h3>
+                        </div>
+                        <div class="form-items">
+                          <form>
+                            <div class="mb-2 p-2">
+                              <label for="exampleInputEmail1" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Type your Name">
+                            </div>
+                            <div class="mb-2 p-2">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Now tell us your Email address">
+                            </div>
+                            <div class="mb-2 p-2">
+                              <label for="exampleInputPassword1" class="form-label">Your message</label>
+                              <textarea type="password" class="form-control" id="exampleInputPassword1" placeholder="What do you want to now"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </form>
-          </div>
-          <div class="location">
-            <h4>Where we are?</h4>
-            <p>Red Bark Lane 742</p>
-            <p>Henderson, Nevada</p>
-            <p>Simpson's house</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.66018079442!2d-115.01750498439532!3d36.07739181574977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d0b89793735f%3A0x82738f1bb7cadcb8!2s712%20Red%20Bark%20Ln%2C%20Henderson%2C%20NV%2089011%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1675017930131!5m2!1ses-419!2sar" 
-              width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <p>Call Us</p>
-            <p>(543) 4321-5678</p>
-            <p>o</p>
-            <p>Send us Whatsapp</p>
-            <p>(543) 11 4567-9876</p>
-          </div>
-      </section> 
-      <div class="logo-audiolusa">
-        <a href="../index.html"><img class src="../images/Logo-fluff-std.png" alt=""></a>
+              <div class="logo-audiolusa">
+                <a href="../index.html"><img class src="../images/fluff-std.png" alt=""></a>
+              </div>
+              <div class="container location">
+                <div class="row location">
+                  <div class="col card-title-a">
+                    <h4 class="card-title">Where we are?</h4>
+                    <p class="card-text">Red Bark Lane 742</p>
+                    <p class="card-text">Henderson, Nevada</p>
+                    <p class="card-text">Simpson's house</p>
+                  </div>
+                    <div class="col map-container">
+                      <iframe id="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.66018079442!2d-115.01750498439532!3d36.07739181574977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d0b89793735f%3A0x82738f1bb7cadcb8!2s712%20Red%20Bark%20Ln%2C%20Henderson%2C%20NV%2089011%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1675017930131!5m2!1ses-419!2sar" 
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                    </div>
+                  <div class="col card-title-b">
+                    <p class="card-text">Call Us</p>
+                    <p class="card-text">(543) 4321-5678</p>
+                    <p class="card-text">o</p>
+                    <p class="card-text">Send us Whatsapp</p>
+                    <p class="card-text">(543) 11 4567-9876</p>
+                  </div>
+                </div>
+              </div>
+         
+          </section> 
+        </div>
       </div>
     </main>
     <footer>
