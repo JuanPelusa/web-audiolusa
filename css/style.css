@@ -654,23 +654,21 @@ main {
 .card-title-a {
     flex-direction: column;
     text-align: center;
-    margin-top: 15px;
-    padding: 20px;
+    margin: 30px 10px 0px 0px;
+
     font-size: 16px;
 }
 
 .card-title-b {
     flex-direction: column;
     text-align: center;
-    margin-top: 7px;
-    padding: 20px;
+    margin-top: 10px;
+
     font-size: 16px;
 }
 
 .location iframe {
-    object-fit: cover;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    object-fit: contain;
 }
 
 .card-text {
@@ -713,6 +711,24 @@ main {
     }    
 }
 
+.container-location {
+    flex-direction: column;
+}
+
+.location iframe {
+    width: 40vh;
+}
+
+.card-title-a {
+    margin: 0px 10px 0px 0px;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.card-title-b {
+    padding: 20px;
+    font-size: 14px;
+}
 
 /* Main - About-Us */
 
