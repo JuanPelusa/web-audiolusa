@@ -194,8 +194,8 @@ main {
     font-weight: lighter;;
 }
 
-.left-row, .right-row {
-    margin: 10px 0px 0px 0px;
+.left-row {
+    margin: 100px 0px 0px 0px;
     
 }
 
@@ -354,11 +354,18 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s cubic-bezier(.38,.37,.33,.82);
 }
+
 
 .product-card img {
     background-color: white;
     border-radius: 5px;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(.38,.37,.33,.82);
 }
 
 .info {
@@ -476,7 +483,6 @@ main {
     height: 25px;
     font-size: 14px;
     border-radius: 20px;
-    transition: all 0.3s ease-in-out;
     }
     
 .product-card img {
@@ -489,6 +495,11 @@ main {
 /* Services */
 
 
+.row-services img {
+    display: flex;
+    justify-content: flex-start;
+}
+
 #container-services__main {
     width: 100%;
     display: flex;
@@ -496,39 +507,81 @@ main {
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    text-align: center;
 }
 
-.upper-bottom__container {
-    width: 600px;
-    height: 450px;
-    margin: 20px;
+.upper-container, .bottom-container {
+    margin: 20px 0px;
 }
 
 .services-text__container {
-    width: 600px;
+    width: 630px;
     height: 450px;
-    margin: 20px;
+    margin: 20px 0px;
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: lighter;
     font-size: 18px;
+    text-align: center;
     line-height: 2;
     color: white;
 }
 
-.upper-bottom__container img {
-    width: 600px;
+.upper-container img {
+    width: 630px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.bottom-container iframe {
+    width: 630px;
     height: 450px;
     border: 1px solid;
     border-radius: 10px;
 }
 
-.upper-bottom__container iframe {
-    width: 600px;
-    height: 450px;
-    border: 1px solid;
-    border-radius: 10px;
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="100"], body[data-aos-duration="100"] [data-aos] {
+    transition-duration: .1s;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 992px) {
+    #container-services__main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upper-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .services-text__container {
+        width: auto;
+        height: auto;
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+        color: white;
+    }
+    
+    .bottom-container iframe {
+        width: auto;
+        height: auto;
+        border: 1px solid;
+        border-radius: 10px;
+    }
 }
 
 
@@ -586,6 +639,14 @@ main {
     background-color: #252525;
 }
 
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+
+[data-aos][data-aos][data-aos-duration="200"], body[data-aos-duration="200"] [data-aos] {
+    transition-duration: .2s;
+}
+
 .card-title-a h4 {
     margin-bottom: 30px;
 }
@@ -593,7 +654,7 @@ main {
 .card-title-a {
     flex-direction: column;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
     padding: 20px;
     font-size: 16px;
 }
@@ -601,15 +662,16 @@ main {
 .card-title-b {
     flex-direction: column;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 7px;
     padding: 20px;
     font-size: 16px;
 }
 
 .location iframe {
-    width: 340px;
+    width: 450px;
     height: 200px;
-    margin-top: 35px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .card-text {
@@ -620,11 +682,27 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0px 10px 0px;
 }
 
 .logo-audiolusa img {
     height: 200px;
     align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.logo-audiolusa img:hover {
+    transform: translateY(-8px);
+    transition: all 0.4s ease-in-out;
+}
+
+.animate__animated {
+    -webkit-animation-duration: 0.2s ease;
+    animation-duration: 0.2s ease;
+    -webkit-animation-duration: none;
+    animation-duration: none;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 /* Responsive */

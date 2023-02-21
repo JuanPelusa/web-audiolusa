@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/Logo-fluff-std.png">
+    <link rel="shortcut icon" href="../images/Logo-fluff-std.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
     crossorigin="anonymous">
@@ -38,7 +40,6 @@
                 <ul class="navbar-nav ms-3">
                   <li class="nav-item">
                     <a class="nav-link" href="./speakers.html">Speakers</a>
-                    <span class="mob-arrow"></span>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./headphones.html">Headphones</a>
@@ -69,69 +70,67 @@
             <h3>Contact Us</h3>
             <h3>-</h3>
           </div>
-            <section>
-              <div class="form-area">
-                <div class="container form-area">
-                  <div id="contact-block" class="row single-form g-0">
-                    <div class="col-sm-12 col-lg-6">
-                      <div class="img-form">
-                        <img class="img-fluid contactImgForm" src="../images/store.webp" alt="">
-                      </div>
+          <section>
+            <div class="form-area">
+              <div class="container form-area">
+                <div id="contact-block" class="row single-form g-0" data-aos="zoom-in-up">
+                  <div class="col-sm-12 col-lg-6">
+                    <div class="img-form">
+                      <img class="img-fluid contactImgForm" src="../images/store.webp" alt="">
                     </div>
-                    <div class="col-sm-12 col-lg-6">
-                      <div class="contact-form">
-                        <div>
-                          <h3>Tell us how can we help you</h3>
-                        </div>
-                        <div class="form-items">
-                          <form>
-                            <div class="mb-2 p-2">
-                              <label for="exampleInputEmail1" class="form-label">Name</label>
-                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Type your Name">
-                            </div>
-                            <div class="mb-2 p-2">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Now tell us your Email address">
-                            </div>
-                            <div class="mb-2 p-2">
-                              <label for="exampleInputPassword1" class="form-label">Your message</label>
-                              <textarea type="password" class="form-control" id="exampleInputPassword1" placeholder="What do you want to now"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                          </form>
-                        </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6">
+                    <div class="contact-form">
+                      <div>
+                        <h3>Tell us how can we help you</h3>
+                      </div>
+                      <div class="form-items">
+                        <form>
+                          <div class="mb-2 p-2">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Type your Name">
+                          </div>
+                          <div class="mb-2 p-2">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Now tell us your Email address">
+                          </div>
+                          <div class="mb-2 p-2">
+                            <label for="exampleInputPassword1" class="form-label">Your message</label>
+                            <textarea type="password" class="form-control" id="exampleInputPassword1" placeholder="What do you want to now"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="logo-audiolusa">
-                <a href="../index.html"><img class src="../images/fluff-std.png" alt=""></a>
-              </div>
-              <div class="container location">
-                <div class="row location">
-                  <div class="col card-title-a">
-                    <h4 class="card-title">Where we are?</h4>
-                    <p class="card-text">Red Bark Lane 742</p>
-                    <p class="card-text">Henderson, Nevada</p>
-                    <p class="card-text">Simpson's house</p>
+            </div>
+            <div class="logo-audiolusa">
+              <a href="../index.html"><img class src="../images/fluff-std.png" alt=""></a>
+            </div>
+            <div class="container location">
+              <div class="row location">
+                <div class="col card-title-a">
+                  <h4 class="card-title">Where we are?</h4>
+                  <p class="card-text">Red Bark Lane 742</p>
+                  <p class="card-text">Henderson, Nevada</p>
+                  <p class="card-text">Simpson's house</p>
+                </div>
+                  <div class="col map-container">
+                    <iframe id="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.66018079442!2d-115.01750498439532!3d36.07739181574977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d0b89793735f%3A0x82738f1bb7cadcb8!2s712%20Red%20Bark%20Ln%2C%20Henderson%2C%20NV%2089011%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1675017930131!5m2!1ses-419!2sar" 
+                      width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                   </div>
-                    <div class="col map-container">
-                      <iframe id="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.66018079442!2d-115.01750498439532!3d36.07739181574977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d0b89793735f%3A0x82738f1bb7cadcb8!2s712%20Red%20Bark%20Ln%2C%20Henderson%2C%20NV%2089011%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1675017930131!5m2!1ses-419!2sar" 
-                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                      </iframe>
-                    </div>
-                  <div class="col card-title-b">
-                    <p class="card-text">Call Us</p>
-                    <p class="card-text">(543) 4321-5678</p>
-                    <p class="card-text">o</p>
-                    <p class="card-text">Send us Whatsapp</p>
-                    <p class="card-text">(543) 11 4567-9876</p>
-                  </div>
+                <div class="col card-title-b">
+                  <p class="card-text">Call Us</p>
+                  <p class="card-text">(543) 4321-5678</p>
+                  <p class="card-text">Send us a Whatsapp</p>
+                  <p class="card-text">(543) 11 4567-9876</p>
                 </div>
               </div>
-         
+            </div>
           </section> 
         </div>
       </div>
@@ -153,6 +152,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
