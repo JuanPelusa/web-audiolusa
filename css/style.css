@@ -668,7 +668,7 @@ main {
 }
 
 .location iframe {
-    object-fit: contain;
+    object-fit: cover;
     margin-top: 25px;
     margin-bottom: 20px;
 }
