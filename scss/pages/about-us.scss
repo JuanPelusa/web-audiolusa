@@ -1,0 +1,71 @@
+.about-us {
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-about__text {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    color: black;
+    margin: 40px 0px 90px 0px;
+    padding: 15px;
+    @media only screen and (max-width: 1200px) {
+        flex-direction: column;
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 14px;
+        color: black;
+        margin: 20px 0px 20px 0px;
+        padding: 15px;
+    }
+}
+#about-img {
+    align-items: center;
+    border-radius: 10px;
+}
+.about-about {
+    padding: 0px 15px 0px 15px;
+    text-align: start;
+    line-height: 1.5;
+    h3 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    @media only screen and (max-width: 1200px) {
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    line-height: 1.5;
+        h3 {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+.about-mision {
+    padding: 0px 15px 0px 15px;
+    text-align: start;
+    line-height: 1.5;
+    h3 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    @media only screen and (max-width: 1200px) {
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    line-height: 1.5;
+        h3 {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}

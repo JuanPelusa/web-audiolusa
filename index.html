@@ -4,39 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/Logo-fluff-std.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Audiolusa</title>
   </head>
     <body>
       <header>
         <div class="container-fluid header">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-xl">
             <div>
-              <a href="index.html"><img class="logo-nav d-flex d-xl-none" src="./images/fluff-std-logo-big.png" alt=""></a>
+              <a href="index.html"><img class="logo-nav d-flex d-xl-none" src="./images/fluff-std.png" alt=""></a>
             </div>
             <div>
-              <a href="index.html" class="navbar-brand"><img class="fluff" src="./images/logo.png" alt=""></a>
+              <a href="index.html" class="navbar-brand"><img class="fluff" src="./images/logo-brand-3d.png" alt=""></a>
             </div>
               <button type="checkbox" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <span id="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-three-dots" viewBox="0 0 16 16">
                     <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 
                     3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
                   </svg>
                 </span>
               </button>
               <div id="navmenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-3">
+                <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="./pages/speakers.html">Speakers</a>
                   </li>
@@ -53,7 +48,10 @@
                     <input class="navbar-search" type="text" placeholder="search">
                   </li>
                   <li>
-                    <img class="navbar-cart" src="./images/white-shopping-cart.png" alt="">
+                    <img class="navbar-user" src="./images/user-128.png" alt="">
+                  </li>
+                  <li>
+                    <img class="navbar-cart" src="./images/2205959_cart_bag_internet_shopping_buy_icon.png" alt="">
                   </li>
                 </ul>
               </div>
@@ -61,37 +59,37 @@
           </nav>
         </div>
       </header>
-    <main>
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 3"></button>
-        </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="4000">
-              <img src="./images/cahiers-tendances-urban-is-natural_0.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="4000">
-              <img src="./images/cahiers-tendancesrock_0.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="4000">
-              <img src="./images/ct-music_in_organic.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="4000">
-              <img src="./images/ct-pop.jpg" class="d-block w-100" alt="...">
-            </div>
+    <main class="begin-site">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 3"></button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="./images/cahiers-tendances-urban-is-natural_0.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/cahiers-tendancesrock_0.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/ct-music_in_organic.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/ct-pop.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>        
+        </div>        
         <div class="b-divider"></div>
         <div class="container-fluid">
           <div class="row left-row">
@@ -100,27 +98,21 @@
                 <img class="img-fluid left-img animate__animated animate__slideInUp" src="./images/PHANTOM-M-375_SUB-K-14-F_home-cinema_1000x600.webp" alt="">
               </div>
             </div>
-            <div class="col left-text">
-              <div>
+            <div class="col dali-text">
+              <div class="left-content">
                 <h2 class="title-index__left" data-aos="zoom-in-left">Minima deleniti</h2>
-              </div>
-              <div class="text-line" data-aos="zoom-in-left">
-                <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p id="text-1" data-aos="zoom-in-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                   Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
                   Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container-fluid">  
           <div class="row right-row">
-            <div class="col right">
-              <div class="text-line" data-aos="zoom-in-right">
-                <h2 class="title-index__right">Minima deleniti</h2>
-              </div>
-              <div>
-                <p class="text-2" data-aos="zoom-in-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <div class="col klipsch-text">
+              <div class="right-content">
+                <h2 class="title-index__right" data-aos="zoom-in-right">Minima deleniti</h2>
+                <p id="text-2" data-aos="zoom-in-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                   Quasi, incidunt natus maxime quaerat iste doloremque est voluptatem numquam, obcaecati, mollitia sunt. 
                   Minima deleniti blanditiis ut, vitae nulla recusandae cumque quidem.
                 </p>
@@ -144,7 +136,7 @@
               <img src="./images/klipsch.png" alt="">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/dali-red.png" alt="">
+              <img src="./images/polkaudio.png" alt="">
             </div>
             <div class="col logo" data-aos="fade-up">
               <img src="./images/bw-logo-4017.png" alt="">
@@ -156,7 +148,7 @@
               <img src="./images/hifiman.webp" alt="">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/polkaudio.png" alt="">
+              <img src="./images/dali-red.png" alt="">
             </div>
             <div class="col logo" data-aos="fade-up">
               <img src="./images/mcintosh.webp" alt="">
@@ -170,10 +162,10 @@
     <footer>
       <div class="container-fluid-foot">
         <div class="social">    
-          <a href="https://es-la.facebook.com/"><img src="./images/facebook.png" alt="facebook" class="facelogo"></a>
-          <a href="https://twitter.com/?lang=es"><img src="./images/twitter.png" alt="twitter" class="twlogo"></a>
-          <a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="instagram" class="instalogo"></a>
-          <a href="https://www.youtube.com/"><img src="./images/youtubelogo.png" alt="youtube" class="ytlogo"></a>
+          <a href="https://es-la.facebook.com/"><img src="./images/black_fb_social media_facebook_facebook logo_social network_icon.png" alt="facebook" class="facelogo"></a>
+          <a href="https://twitter.com/?lang=es"><img src="./images/black_twitter_bird_icon.png" alt="twitter" class="twlogo"></a>
+          <a href="https://www.instagram.com/"><img src="./images/black_instagram_icon.png" alt="instagram" class="instalogo"></a>
+          <a href="https://www.youtube.com/"><img src="./images/black_youtube_icon.png" alt="youtube" class="ytlogo"></a>
         </div>
           <div class="center-foot">
             <a href="./pages/contact.html">Contact</a>&nbsp; &nbsp;

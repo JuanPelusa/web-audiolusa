@@ -1,0 +1,110 @@
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: black;
+}
+.navbar {
+    border-bottom: 1px solid;
+    border-bottom-width: thin;
+    border-bottom-style: inset;
+    @media only screen and (max-width: 1200px) {
+        border-bottom: none;
+    .logo-nav {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    } 
+    .navbar-brand {
+        display: none;
+        } 
+    }
+}    
+.navbar-brand {
+    padding-top: none;
+    padding-bottom: none;
+    margin-right: none;
+    text-decoration: none;
+    white-space: none;
+    margin-top: 5px;
+    img {
+        height: 40px;
+        margin-top: 5px;
+    }
+}
+#navmenu {
+    justify-content: flex-end;
+    text-align: center;
+    input {
+        width: 100px;
+        border: 3px solid #5f9ea0;
+        border-radius: 10px;
+        text-indent: 5px;
+        font-weight: bold;
+        margin: 0px 5px 0px 5px;
+    }
+    a {
+        font-size: 22px;
+    }
+    .navbar-user {
+        width: 1.6em;
+        height: 1.6em;
+        margin: 0px 5px 0px 5px;
+    }
+    .navbar-cart {
+        width: 1.6em;
+        height: 1.6em;
+        margin: 0px 5px 0px 5px;
+    }
+    @media only screen and (max-width: 1200px) {
+        a {
+            font-size: 16px;
+        }
+        input, .placeholder::first-letter {
+            width: 80px;
+            border: 1px solid #5f9ea0;
+            text-align: center;
+            text-indent: 0px;
+         }
+    }
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: none;
+    --bs-nav-link-disabled-color: none;
+    --bs-navbar-toggler-border-radius: none;
+    --bs-navbar-toggler-focus-width: none;
+    --bs-navbar-toggler-transition: none;   
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    @media only screen and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-user {
+        margin: 0px 0px 0px 0px;
+    }    
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.navbar-toggler {
+    @media only screen and (max-width: 1200px) {
+        border: none;
+        padding-right: 0px;
+        transition: all 0.30s ease;
+        &:hover, :focus {
+            transform: rotate(90deg);
+             transition: all 0.30s ease;
+             text-decoration: none;
+             outline: 0;
+            box-shadow: none;
+        }
+    }    
+}
