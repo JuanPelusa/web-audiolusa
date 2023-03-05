@@ -39,8 +39,8 @@
     }
 }
 .facelogo {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: auto;
     @media only screen and (max-width: 1200px) {
         width: 20px;
         height: 20px;
@@ -48,19 +48,19 @@
 }
 .twlogo {
     width: 40px;
-    height: 30px;
-    padding-left: 10px ;
+    height: auto;
+    padding-left: 12px ;
     @media only screen and (max-width: 1200px)
     {
         width: 33px;
         height: 28px;
-        padding-left: 10px ;
+        padding-left: 12px ;
     }
 }
 .instalogo {
-    width: 40px;
-    height: 28px;
-    padding-left: 5px;
+    width: 29px;
+    height: auto;
+    padding-left: 6px;
     @media only screen and (max-width: 1200px)
     {
         width: 30px;
@@ -70,10 +70,10 @@
 }
 .ytlogo {
     align-items: center;
-    width: 48px;
-    height: 35px;
+    width: 36px;
+    height: auto;
     margin-top: 2px;
-    padding-left: 5px;
+    padding-left: 6px;
     @media only screen and (max-width: 1200px)
     {
         width: 35px;

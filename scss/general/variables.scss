@@ -1,0 +1,30 @@
+//+ Sizes +//
+
+$small: 14px;
+$medium: 16px;
+$large: 18px;
+$xlarge: 20px;
+$xxlarge: 22px;
+
+//+ W & H +//
+
+$width: 700px;
+$height: 500px;
+
+//* Viewports *//
+
+$mobile: 576px;
+$tablet: 768px;
+$landscapeT: 1024px;
+$desktop: 1200px;
+
+//* Mixins *//
+
+@mixin tablet-portrait {
+    @media only screen and (min-width: $landscapeT) {@content}
+};
+
+@mixin desktop-only {
+    @media (max-width: $desktop) {@content}
+};
+

@@ -1,3 +1,8 @@
+/* General*/
+
+@import "./general/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap");
+
 /* Layout */
 
 @import "./layout/header.scss";
@@ -11,4 +16,4 @@
 @import "./pages/wireless.scss";
 @import "./pages/services.scss";
 @import "./pages/contact.scss";
-@import "./pages/about-us.scss"
+@import "./pages/about-us.scss";

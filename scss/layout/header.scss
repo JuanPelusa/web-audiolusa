@@ -1,3 +1,4 @@
+
 .bg-light {
     --bs-bg-opacity: 0;
     background-color: black;
@@ -42,7 +43,7 @@
         margin: 0px 5px 0px 5px;
     }
     a {
-        font-size: 22px;
+        font-size: $xlarge;
     }
     .navbar-user {
         width: 1.6em;
@@ -56,14 +57,14 @@
     }
     @media only screen and (max-width: 1200px) {
         a {
-            font-size: 16px;
+            font-size: $medium;
         }
         input, .placeholder::first-letter {
             width: 80px;
             border: 1px solid #5f9ea0;
             text-align: center;
             text-indent: 0px;
-         }
+        }
     }
 }
 .navbar-nav {
@@ -101,9 +102,9 @@
         transition: all 0.30s ease;
         &:hover, :focus {
             transform: rotate(90deg);
-             transition: all 0.30s ease;
-             text-decoration: none;
-             outline: 0;
+            transition: all 0.30s ease;
+            text-decoration: none;
+            outline: 0;
             box-shadow: none;
         }
     }    

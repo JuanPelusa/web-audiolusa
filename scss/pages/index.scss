@@ -1,14 +1,13 @@
 //* Begin site *//
-
 #carouselExampleAutoplaying {
-    @media only screen and (max-width: 1200px) {
+    @include desktop-only {
         max-width: 100%;
     }
 }
 .carousel-inner {
         border-bottom-width: thin;
         border-bottom-style: inset ;
-        @media only screen and (max-width: 1200px) {
+        @include desktop-only {
             overflow: hidden;
             width: 100%;
             border-radius: 0px;
@@ -17,7 +16,7 @@
     .carousel-control-prev-icon, .carousel-control-next-icon {
         width: 50px;
         height: 50px;
-        @media only screen and (max-width: 1200px) {
+        @include desktop-only {
             width: 30px;
             height: 30px;
         }
@@ -27,26 +26,26 @@
     }
     .col {
         color: black;
-        font-size: 18px;
+        font-size: $large;
         font-style: normal;
         font-weight: lighter;;
     }
     .left-row {
     margin-top: 5em;
-    @media only screen and (max-width: 1200px) {
+    @include desktop-only {
             flex-direction: column;
             margin: 10px 0px 0px 0px;   
         }
     }
     .right {
         padding: 0px 0px;
-        @media only screen and (max-width: 1200px) {
+        @include desktop-only {
             padding: 0px 12px 0px 12px;
         }
     }
     .right-row {
     margin: -2em 0em 4em 0em;
-        @media only screen and (max-width: 1200px) {
+    @include desktop-only {
                 flex-direction: column-reverse;
                 margin: 10px 0px 0px 0px;
             }
@@ -60,7 +59,10 @@
         width: 400px;
         text-align: start;
         letter-spacing: 1px;
-            @media only screen and (max-width: 1200px) {
+        @media only screen and (width: 1366px) {
+            margin: 5em 0em 0em 9em;
+        }
+        @include desktop-only {
             margin: 20px 0px 20px 0px;
             width: 250px;
             height: 170px;}
@@ -71,15 +73,18 @@
         width: 400px;
         text-align: start;
         letter-spacing: 1px;
-            @media only screen and (max-width: 1200px) {
+        @media only screen and (width: 1366px) {
+            margin: 7em 0em 0em 9em;
+        }
+        @include desktop-only {
             margin: 20px 0px 20px 0px;
             width: 250px;
             height: 170px;}
     }
     #text-1, #text-2 {
-        font-size: 18px;
-        @media only screen and (max-width: 1200px){
-            font-size: 14px;
+        font-size: $large;
+        @include desktop-only {
+            font-size: $small;
         }
     }
     .text-center h5 {
@@ -97,7 +102,7 @@
             height: 70px;
             border-radius: 50%;
         }
-    @media only screen and (max-width: 1200px) {
+        @include desktop-only {
         justify-content: center;
         align-items: center;
         margin: 5px 0px 5px 0px;
