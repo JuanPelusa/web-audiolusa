@@ -24,14 +24,18 @@ $desktop: 1200px;
 //* Mixins *//
 
 @mixin tablet-portrait {
-    @media only screen and (max-width: $landscapePlus) and (min-width: $landscape) {@content}
+    @media  (max-width: $landscapePlus) and (min-width: $landscape) {@content}
 };
 
 @mixin tablet-lsPlus {
-    @media only screen and (width: $landscapePlus) {@content}
+    @media (width: $landscapePlus) {@content}
 };
 
 @mixin mobile-only {
     @media (max-width: $tabletPlus) {@content}
 };
+
+@mixin desktop {
+    @media (max-width: $desktop) {@content}
+}
 
