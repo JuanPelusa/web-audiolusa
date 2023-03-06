@@ -89,6 +89,7 @@
     }
     #text-1, #text-2 {
         font-size: $large;
+        font-weight: 400;
         @include mobile-only {
             font-size: $small;
         }

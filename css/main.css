@@ -1,5 +1,8 @@
 /* General*/
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap");
+h1, h2, h3, h4, h5, h6, li, p, a {
+  color: black; }
+
 /* Layout */
 .bg-light {
   --bs-bg-opacity: 0;
@@ -102,11 +105,11 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
   height: 40px;
-  color: black;
+  margin-top: 30px;
   font-style: normal;
-  font-weight: 400;
-  width: 100%; }
+  font-weight: 400; }
   @media only screen and (max-width: 1200px) {
     .container-fluid-foot {
       flex-direction: column;
@@ -130,7 +133,6 @@
   border-bottom-width: medium;
   border-bottom-style: inset; }
   .center-foot a {
-    color: black;
     text-decoration: none; }
   @media only screen and (max-width: 1200px) {
     .center-foot {
@@ -269,7 +271,8 @@
       height: 170px; } }
 
 #text-1, #text-2 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 400; }
   @media (max-width: 992px) {
     #text-1, #text-2 {
       font-size: 14px; } }
@@ -669,7 +672,7 @@
   display: flex;
   margin: 20px 0px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   text-align: start;
   line-height: 2; }
