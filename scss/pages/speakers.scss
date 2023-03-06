@@ -41,9 +41,6 @@
     width: 100%;
     flex-wrap: wrap;
     margin: auto; 
-    @if $landscapeT == 1024px {
-        background-color: black;
-    }
     @media only screen and (max-width: 1200px) { 
         width: 100%;
         margin: auto;

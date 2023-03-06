@@ -15,16 +15,23 @@ $height: 500px;
 
 $mobile: 576px;
 $tablet: 768px;
-$landscapeT: 1024px;
+$tabletPlus: 992px;
+$landscape: 1024px;
+$landscapeMedium: 1180px;
+$landscapePlus: 1366px;
 $desktop: 1200px;
 
 //* Mixins *//
 
 @mixin tablet-portrait {
-    @media only screen and (min-width: $landscapeT) {@content}
+    @media only screen and (max-width: $landscapePlus) and (min-width: $landscape) {@content}
 };
 
-@mixin desktop-only {
-    @media (max-width: $desktop) {@content}
+@mixin tablet-lsPlus {
+    @media only screen and (width: $landscapePlus) {@content}
+};
+
+@mixin mobile-only {
+    @media (max-width: $tabletPlus) {@content}
 };
 
