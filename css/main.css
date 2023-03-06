@@ -226,6 +226,9 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .right-row {
   margin: -2em 0em 4em 0em; }
+  @media (max-width: 1366px) and (min-width: 1024px) {
+    .right-row {
+      margin-top: 0.5em; } }
   @media (max-width: 992px) {
     .right-row {
       flex-direction: column-reverse;
@@ -236,39 +239,42 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .left-content {
   margin: 6em 0em 0em 17em;
-  height: 100px;
+  height: 310px;
   width: 400px;
   text-align: start;
   letter-spacing: 1px; }
   @media (max-width: 1366px) and (min-width: 1024px) {
     .left-content {
-      margin: 2em 0em 0em 2.5em; } }
+      margin: 0em 0em 1em 2.5em; } }
   @media (width: 1366px) {
     .left-content {
-      margin: 5em 0em 0em 11em; } }
+      margin: 2em 0em 0em 9em; } }
   @media (max-width: 992px) {
     .left-content {
       margin: 20px 0px 20px 0px;
       width: 250px;
-      height: 170px; } }
+      height: 310px; } }
 
 .right-content {
   margin: 9em 0em 0em 17em;
-  height: 100px;
+  height: 280px;
   width: 400px;
   text-align: start;
   letter-spacing: 1px; }
   @media (max-width: 1366px) and (min-width: 1024px) {
     .right-content {
-      margin: 4em 0em 0em 2.5em; } }
+      margin: 2em 0em 0em 2.5em;
+      font-size: 14px; } }
   @media (width: 1366px) {
     .right-content {
-      margin: 5em 0em 0em 11em; } }
+      margin: 5em 0em 0em 9em;
+      font-size: 16px; } }
   @media (max-width: 992px) {
     .right-content {
       margin: 20px 0px 20px 0px;
+      font-size: 14px;
       width: 250px;
-      height: 170px; } }
+      height: 270px; } }
 
 #text-1, #text-2 {
   font-size: 18px;
@@ -376,7 +382,6 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   position: absolute;
   z-index: 1000;
   background-color: black;
-  color: white;
   font-style: normal;
   font-weight: lighter;
   top: 0;
@@ -388,6 +393,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     font-size: 18px; }
   .info p {
     font-size: 14px;
+    color: white;
     margin-bottom: 20px; }
   .info button {
     width: 75px;
@@ -825,21 +831,11 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  font-family: 'Oxygen';
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 16px;
-  color: black;
   margin: 40px 0px 90px 0px;
   padding: 15px; }
   @media only screen and (max-width: 1200px) {
     .container-about__text {
       flex-direction: column;
-      font-family: 'Oxygen';
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 14px;
-      color: black;
       margin: 20px 0px 20px 0px;
       padding: 15px; } }
 
@@ -847,38 +843,20 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   align-items: center;
   border-radius: 10px; }
 
-.about-about {
+.about-about, .about-mision {
   padding: 0px 15px 0px 15px;
   text-align: start;
   line-height: 1.5; }
-  .about-about h3 {
-    text-align: center;
+  .about-about h3, .about-mision h3 {
+    text-align: center; }
+  .about-about p, .about-mision p {
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: 400; }
   @media only screen and (max-width: 1200px) {
-    .about-about {
+    .about-about, .about-mision {
       font-size: 14px;
       padding: 0px 5px 0px 5px;
       text-align: center;
       line-height: 1.5; }
-      .about-about h3 {
-        font-size: 16px;
-        text-align: center; } }
-
-.about-mision {
-  padding: 0px 15px 0px 15px;
-  text-align: start;
-  line-height: 1.5; }
-  .about-mision h3 {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold; }
-  @media only screen and (max-width: 1200px) {
-    .about-mision {
-      font-size: 14px;
-      padding: 0px 5px 0px 5px;
-      text-align: center;
-      line-height: 1.5; }
-      .about-mision h3 {
-        font-size: 16px;
+      .about-about h3, .about-mision h3 {
         text-align: center; } }

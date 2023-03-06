@@ -45,6 +45,9 @@
     }
     .right-row {
     margin: -2em 0em 4em 0em;
+    @include tablet-portrait {
+        margin-top: 0.5em;
+    }
     @include mobile-only {
                 flex-direction: column-reverse;
                 margin: 10px 0px 0px 0px;
@@ -55,37 +58,40 @@
     }
     .left-content {
         margin: 6em 0em 0em 17em;
-        height: 100px;
+        height: 310px;
+        width: 400px;
+        text-align: start;
+        letter-spacing: 1px;
+        @include tablet-portrait {
+            margin: 0em 0em 1em 2.5em;
+        }
+        @include tablet-lsPlus {
+            margin: 2em 0em 0em 9em;
+        }
+        @include mobile-only {
+            margin: 20px 0px 20px 0px;
+            width: 250px;
+            height: 310px;}
+    }
+    .right-content {
+        margin: 9em 0em 0em 17em;
+        height: 280px;
         width: 400px;
         text-align: start;
         letter-spacing: 1px;
         @include tablet-portrait {
             margin: 2em 0em 0em 2.5em;
+            font-size: $small;
         }
         @include tablet-lsPlus {
-            margin: 5em 0em 0em 11em;
+            margin: 5em 0em 0em 9em;
+            font-size: $medium;
         }
         @include mobile-only {
             margin: 20px 0px 20px 0px;
+            font-size: $small;
             width: 250px;
-            height: 170px;}
-    }
-    .right-content {
-        margin: 9em 0em 0em 17em;
-        height: 100px;
-        width: 400px;
-        text-align: start;
-        letter-spacing: 1px;
-        @include tablet-portrait {
-            margin: 4em 0em 0em 2.5em;
-        }
-        @include tablet-lsPlus {
-            margin: 5em 0em 0em 11em;
-        }
-        @include mobile-only {
-            margin: 20px 0px 20px 0px;
-            width: 250px;
-            height: 170px;}
+            height: 270px;}
     }
     #text-1, #text-2 {
         font-size: $large;

@@ -20,22 +20,3 @@ $landscape: 1024px;
 $landscapeMedium: 1180px;
 $landscapePlus: 1366px;
 $desktop: 1200px;
-
-//* Mixins *//
-
-@mixin tablet-portrait {
-    @media  (max-width: $landscapePlus) and (min-width: $landscape) {@content}
-};
-
-@mixin tablet-lsPlus {
-    @media (width: $landscapePlus) {@content}
-};
-
-@mixin mobile-only {
-    @media (max-width: $tabletPlus) {@content}
-};
-
-@mixin desktop {
-    @media (max-width: $desktop) {@content}
-}
-

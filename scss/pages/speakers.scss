@@ -78,7 +78,6 @@
     position: absolute;
     z-index: 1000;
     background-color: rgb(0, 0, 0);
-    color: white;
     font-style: normal;
     font-weight: lighter;
     top: 0;
@@ -91,6 +90,7 @@
     }
     p {
         font-size: 14px;
+        color: white;
         margin-bottom: 20px;
     }
     button {
