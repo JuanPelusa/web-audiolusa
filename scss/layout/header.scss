@@ -1,4 +1,10 @@
+//* Header Nav *//
 
+.header {
+    @include mobile {
+        background-color: rgb(121, 121, 121);;
+    }
+}
 .bg-light {
     --bs-bg-opacity: 0;
     background-color: black;
@@ -7,7 +13,7 @@
     border-bottom: 1px solid;
     border-bottom-width: thin;
     border-bottom-style: inset;
-    @media only screen and (max-width: 1200px) {
+    @include desktop {
         border-bottom: none;
     .logo-nav {
         width: 50px;
@@ -55,11 +61,11 @@
         height: 1.6em;
         margin: 0px 5px 0px 5px;
     }
-    @media only screen and (max-width: 1200px) {
+    @include desktop {
         a {
             font-size: $medium;
         }
-        input, .placeholder::first-letter {
+        input {
             width: 80px;
             border: 1px solid #5f9ea0;
             text-align: center;
@@ -82,7 +88,7 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    @media only screen and (max-width: 1200px) {
+    @include desktop {
         display: flex;
         flex-direction: column;
     }
@@ -96,7 +102,7 @@
     align-items: center;
 }
 .navbar-toggler {
-    @media only screen and (max-width: 1200px) {
+    @include desktop {
         border: none;
         padding-right: 0px;
         transition: all 0.30s ease;

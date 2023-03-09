@@ -1,10 +1,11 @@
 /* General*/
 
-@import "./general/variables.scss";
-@import "./general/conditionals.scss";
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap");
-@import "./general/color.scss";
-@import "./general/mixins.scss";
+@import "./general/__variables.scss";
+@import "./general/_extend.scss";
+@import "./general/_each.scss";
+@import "./general/typography";
+@import "./general/_color.scss";
+@import "./general/__mixins.scss";
 
 /* Layout */
 
@@ -14,9 +15,7 @@
 /* Pages */
 
 @import "./pages/index.scss";
-@import "./pages/speakers.scss";
-@import "./pages/headphones.scss";
-@import "./pages/wireless.scss";
+@import "./pages/products.scss";
 @import "./pages/services.scss";
 @import "./pages/contact.scss";
 @import "./pages/about-us.scss";
