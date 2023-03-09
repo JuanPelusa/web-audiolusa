@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   @media (width: 1366px) {
     .left-content {
       margin: 2em 0em 0em 9em; } }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .left-content {
       margin: 20px 0px 20px 0px;
       width: 250px;
@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     .right-content {
       margin: 5em 0em 0em 9em;
       font-size: 16px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .right-content {
       margin: 20px 0px 20px 0px;
       font-size: 14px;
