@@ -36,6 +36,9 @@
 }
 .form-text {
     font-size: $medium ;
+    @include mobile-index {
+        font-size: $small;
+    }
 }
 .form-label {
     color: #fff;

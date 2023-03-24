@@ -1,0 +1,85 @@
+.container-basket {
+    @include mobile-index {
+        width: 500px;
+    }
+}
+
+#basket-container {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    thead {
+        font-weight: 500;
+    }
+    td {
+        border: 1px solid grey;
+        text-align: center;
+        p {
+        text-align: center;
+    }
+        @include mobile {
+            margin: 0;
+            p {
+                font-size: $small;
+                
+            }
+            h5 {
+                font-size: $small;
+                font-weight: none;
+            }
+        }
+    }
+    img {
+        width: 100px;
+        @include mobile {
+            width: 50px;
+        }
+    }
+    
+}
+#basket-bottom {
+    button {
+        @extend %buttons;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-top: 15px;
+        @include mobile {
+            width: 80px;
+        }
+    }
+    @include mobile {
+        margin: 0;
+        td {
+            padding: 5px;
+        }
+    }
+}
+.head-label {
+    text-align: center;
+    background-color: darkorange;
+    padding: 5px 0px;
+    @include mobile {
+        font-size: $small;
+    }
+}
+
+.thAmount {
+    background-color: darkorange;
+    @include mobile {
+        h6 {
+            font-size: $small;
+        }
+    }
+}
+.amount {
+    border: 1px solid grey;
+    td {
+        padding: 15px;
+    }
+}
+.total {
+    p {
+        font-size: $small;
+    }
+}
