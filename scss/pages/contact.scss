@@ -24,7 +24,7 @@
     }
 }
 .single-form{
-    background: #ff2525;
+    background: #545454;
 }
 .right, .left {
 	position: relative;
@@ -33,6 +33,9 @@
     margin-bottom: 5px;
     padding: 5px;
 	border: 1px solid #000000;
+}
+.form-text {
+    font-size: $medium ;
 }
 .form-label {
     color: #fff;

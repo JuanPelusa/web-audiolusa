@@ -1,10 +1,5 @@
 //* Products General Page *//
 
-body {
-    @include mobile {
-        background-color: rgb(197, 197, 197);
-    }
-}
 .main-contents {
     display: flex;
     flex-direction: row;
@@ -14,7 +9,7 @@ body {
     color: black;
     font-style: normal;
     font-weight: 550;
-    h3 {
+    h1, h3, span {
         text-align: center;
         padding: $xlarge;
         font-weight: lighter;
@@ -25,7 +20,7 @@ body {
         padding: 5px;
         font-style: normal;
         font-weight: lighter;
-        h3 {
+        h1, h3, span {
             padding: 5px;
             font-size: $medium;
         }   
@@ -96,8 +91,9 @@ body {
     top: 0;
     left:0;
     padding: 10px;
-    border: 2px solid rgb(163, 163, 163);
+
     border-radius: 7px;
+    box-shadow: 0 0 10px grey;
     width:100%;
     height: 100%;
     p {

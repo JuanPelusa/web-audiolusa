@@ -20,10 +20,10 @@
         <div class="container-fluid header">
           <nav class="navbar navbar-expand-xl">
             <div>
-              <a href="index.html"><img class="logo-nav d-flex d-xl-none" src="./images/fluff-std.png" alt=""></a>
+              <a href="index.html"><img class="logo-nav d-flex d-xl-none" src="./images/fluff-std.png" alt="Fluff image Audiolusa"></a>
             </div>
             <div>
-              <a href="index.html" class="navbar-brand"><img class="fluff" src="./images/logo-brand-3d.png" alt=""></a>
+              <a href="index.html" class="navbar-brand"><img class="fluff" src="./images/logo-brand-3d.png" alt="Fluff logo Audiolusa"></a>
             </div>
               <button type="checkbox" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span id="icon">
@@ -35,6 +35,9 @@
               </button>
               <div id="navmenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./pages/speakers.html">Speakers</a>
                   </li>
@@ -50,11 +53,67 @@
                   <li>
                     <input class="navbar-search" type="text" placeholder="search">
                   </li>
-                  <li>
-                    <img class="navbar-user" src="./images/user-128.png" alt="">
-                  </li>
-                  <li>
-                    <img class="navbar-cart" src="./images/2205959_cart_bag_internet_shopping_buy_icon.png" alt="">
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      <img class="navbar-user" src="./images/user-128.png" alt="login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    </a>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xs modal-lg">
+                        <div class="modal-content">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <div class="modal-header signInTitle">
+                            <h1 class="modal-title fs-2" id="exampleModalLabel">Login</h1>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-outline mb-3">
+                                <input type="email" id="form2Example1 signInput" class="form-control" placeholder="email" />
+                                <label class="sign-label bk-first" for="form2Example1">Email address</label>
+                              </div>
+                                <div class="form-outline mb-3">
+                                  <input type="password" id="form2Example2" class="form-control" placeholder="password" />
+                                  <label class="sign-label bk-first" for="form2Example2">Password</label>
+                                </div>
+                              <div class="row mb-3">
+                                <div class="col check">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="form2Example31" checked />
+                                    <label class="form-check-label fs-6" for="form2Example31">Remember me</label>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <a href="#!" class="reset-pass fs-6">Forgot password?</a>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-primary btn-block mb-4 signInBtn">Sign in</button>
+                              <div class="sign hr-lines">
+                                <h4 class="fs-6">Or</h4>
+                              </div>
+                              <div class="register">
+                                <h2 class="register-title fs-2">Register</h2>
+                              </div>
+                              <div class="form-outline mb-3">
+                                <input type="email" id="form2Example1" class="form-control" placeholder="name" />
+                                <label class="sign-label bk-first" for="form2Example1">Full name</label>
+                              </div>
+                              <div class="form-outline mb-3">
+                                <input type="password" id="form2Example2" class="form-control" placeholder="email" />
+                                <label class="sign-label bk-first" for="form2Example2">Enter your email</label>
+                              </div>
+                              <div class="form-outline mb-3">
+                                <input type="email" id="form2Example1" class="form-control" placeholder="password" />
+                                <label class="sign-label bk-first" for="form2Example1">password</label>
+                              </div>
+                              <div class="form-outline mb-3">
+                                <input type="password" id="form2Example2" class="form-control" placeholder="re-enter" />
+                                <label class="sign-label bk-first" for="form2Example2">re-enter password</label>
+                              </div>
+                              <button type="button" class="btn btn-primary btn-block mb-4 signInBtn">Sign up</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -70,27 +129,27 @@
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 3"></button>
           </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner carousel-">
               <div class="carousel-item active" data-bs-interval="4000">
-                <img src="./images/cahiers-tendances-urban-is-natural_0.jpg" class="d-block w-100" alt="...">
+                <img src="./images/cahiers-tendances-urban-is-natural_0.jpg" class="d-block w-100" 
+                alt="Focal aria bookshelf magic natural sound for your music">
               </div>
               <div class="carousel-item" data-bs-interval="4000">
-                <img src="./images/cahiers-tendancesrock_0.jpg" class="d-block w-100" alt="...">
+                <img src="./images/cahiers-tendancesrock_0.jpg" class="d-block w-100" 
+                alt="Studio motoring speakers for professional mastering and mixing">
               </div>
               <div class="carousel-item" data-bs-interval="4000">
-                <img src="./images/ct-music_in_organic.jpg" class="d-block w-100" alt="...">
+                <img src="./images/ct-music_in_organic.jpg" class="d-block w-100" 
+                  alt="Powerful and delightful sound with Focal Sopra floorstanding">
               </div>
               <div class="carousel-item" data-bs-interval="4000">
-                <img src="./images/ct-pop.jpg" class="d-block w-100" alt="...">
+                <img src="./images/ct-pop.jpg" class="d-block w-100" 
+                  alt="Color and magic of pop combined with this Stella utopia">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
             </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
           </button>
         </div>        
         <div class="b-divider"></div>
@@ -98,14 +157,18 @@
           <div class="row left-row">
             <div class="col left">
               <div class="dali" data-aos="fade-up">
-                <img class="img-fluid left-img animate__animated animate__slideInUp" src="./images/PHANTOM-M-375_SUB-K-14-F_home-cinema_1000x600.webp" alt="">
+                <img class="img-fluid left-img animate__animated animate__slideInUp" src="./images/PHANTOM-M-375_SUB-K-14-F_home-cinema_1000x600.webp" 
+                  alt="Emotion and motion for your movies with Dali Phantom series">
               </div>
             </div>
             <div class="col dali-text">
               <div class="left-content">
-                <h2 class="title-index__left" data-aos="zoom-in-left">That touch of delicacy</h2>
-                <p id="text-1" data-aos="zoom-in-left"><i>F</i>rom compact bookshelf speakers and high-end floorstanders to portable Bluetooth speakers and an entire wireless active ecosystem, DALI has a range of products to suit music lovers, Hi-Fi enthusiasts and movie fans everywhere. 
-                  Enjoy browsing our product range below to find out which ones are right for you. Find the entire line of products in <span class="bk-first"><i>A</i>udiolusa!</span>
+                <h1 class="title-index__left" data-aos="zoom-in-left">That touch of delicacy</h1>
+                <p id="text-1" data-aos="zoom-in-left"><i>F</i>rom compact bookshelf speakers and high-end floorstanders to portable 
+                  Bluetooth speakers and an entire wireless active ecosystem. 
+                  DALI has a range of products to suit music lovers, Hi-Fi enthusiasts and movie fans everywhere. 
+                  Find the entire line of products and chosse which ones are right for you. 
+                  in <span class="bk-first"><i>A</i>udiolusa!</span>
                 </p>
               </div>
             </div>
@@ -116,47 +179,93 @@
                 <h2 class="title-index__right" data-aos="zoom-in-right">You better buckle up</h2>
                 <p id="text-2" data-aos="zoom-in-right"><i>A</i>re you ready to experience your movies and music like never before? 
                   A Klipsch Home Theater System is able to bring you closer to the action as no other speaker can.
-                  Don't just hear the difference, feel the difference with our state-of-the-art home sound systems comprised of our award-winning stereo speakers for home theater.
+                  Don't just hear the difference, feel the difference with our state-of-the-art home sound systems comprised of our 
+                  award-winning stereo speakers for home theater.
                 </p>
               </div>
             </div>
             <div class="col right">
               <div class="klipsch" data-aos="fade-up">
-                <img class="img-fluid right-img animate__animated animate__slideInUp" src="./images/Reference-2018-Floorstanding-Cabinet.png" alt="">
+                <img class="img-fluid right-img animate__animated animate__slideInUp" src="./images/Reference-2018-Floorstanding-Cabinet.png" 
+                  alt="Rude, hard and incredible. Klipsch Reference series offers the loudest sound">
               </div>
             </div>
           </div>
         </div>
       <div class="b-divider"></div>
-        <div class="container text-center">
+        <div class="container-fluid text-center">
           <h5>- Brands we proudly sell -</h5>
           <div class="row">
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/brand (1).gif" alt="">
+              <img src="./images/brand (1).gif" alt="Focal Logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/klipsch.png" alt="">
+              <img src="./images/klipsch.png" alt="Klipsch logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/polkaudio.png" alt="">
+              <img src="./images/polkaudio.png" alt="Polk logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/bw-logo-4017.png" alt="">
+              <img src="./images/bw-logo-4017.png" alt="Bowers & Wilkins logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/yamaha-logo.png" alt="">
+              <img src="./images/yamaha-logo.png" alt="Yamaha logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/hifiman.webp" alt="">
+              <img src="./images/hifiman.webp" alt="Hifiman logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/dali-red.png" alt="">
+              <img src="./images/dali-red.png" alt="Dali speakers logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/mcintosh.webp" alt="">
+              <img src="./images/mcintosh.webp" alt="Mcintosh logo">
             </div>
             <div class="col logo" data-aos="fade-up">
-              <img src="./images/marantz-logo.gif" alt="">
+              <img src="./images/marantz-logo.gif" alt="Marantz logo">
+            </div>
+            <div class="col logo" data-aos="fade-up">
+              <img src="./images/logo cambridge audio.png" alt="Cambridge audio logo">
+            </div>
+            <div class="col logo" data-aos="fade-up">
+              <img src="./images/onkyo.gif" alt="Onkyo logo">
+            </div>
+          </div>
+        </div>
+        <div class="worksGallery" data-aos="fade-up">
+          <div class="itemGallery">
+            <img class="imgGallery" src="./images/audio room 2.jpg" alt="Music listening with a minimal touch">
+            <div>
+              <h3 class="pBottom">Armony of light</h3>
+            </div>
+          </div>
+          <div class="itemGallery">
+            <img class="imgGallery" src="./images/Loudspeakers_Nautilus_desktop.jpg" alt="The Bowers and Wilkins nautilus are from another world">
+            <div>
+              <h3 class="pBottom">Power of the seas</h3>
+            </div>
+          </div>
+          <div class="itemGallery">
+            <img class="imgGallery" src="./images/Highres_CX_5050.jpg.webp" alt="Exquisite British sound">
+            <div>
+              <h3 class="pBottom">Pure enjoy</h3>
+            </div>
+          </div>
+          <div class="itemGallery" data-aos="fade-up">
+            <img class="imgGallery" src="./images/focal_home_avion.jpg" alt="The best companion for an audiophile traveller">
+            <div>
+              <h3 class="pBottom">Joy of travel</h3>
+            </div>
+          </div>
+          <div class="itemGallery" data-aos="fade-up">
+            <img class="imgGallery" src="./images/Denon_EU_AVR_CategoryBanner_20.jpg" alt="Pure Denon sound">
+            <div>
+              <h3 class="pBottom">Call to action</h3>
+            </div>
+          </div>
+          <div class="itemGallery" data-aos="fade-up">
+            <img class="imgGallery" src="./images/Loudspeakers_600SeriesSBS_Desktop.jpg" alt="Finest and unique 600 series from B&W">
+            <div>
+              <h3 class="pBottom">The warmth of home</h3>
             </div>
           </div>
         </div>
@@ -164,10 +273,10 @@
     <footer>
       <div class="container-fluid foot">
         <div class="social">    
-          <a href="https://es-la.facebook.com/"><img src="./images/black_fb_social media_facebook_facebook logo_social network_icon.png" alt="facebook" class="facelogo"></a>
-          <a href="https://twitter.com/?lang=es"><img src="./images/black_twitter_bird_icon.png" alt="twitter" class="twlogo"></a>
-          <a href="https://www.instagram.com/"><img src="./images/black_instagram_icon.png" alt="instagram" class="instalogo"></a>
-          <a href="https://www.youtube.com/"><img src="./images/black_youtube_icon.png" alt="youtube" class="ytlogo"></a>
+          <a href="https://es-la.facebook.com/" target="_blank"><img src="./images/black_fb_social media_facebook_facebook logo_social network_icon.png" alt="facebook" class="facelogo"></a>
+          <a href="https://twitter.com/?lang=es" target="_blank"><img src="./images/black_twitter_bird_icon.png" alt="twitter" class="twlogo"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./images/black_instagram_icon.png" alt="instagram" class="instalogo"></a>
+          <a href="https://www.youtube.com/" target="_blank"><img src="./images/black_youtube_icon.png" alt="youtube" class="ytlogo"></a>
         </div>
           <div class="center-foot">
             <a href="./pages/contact.html">Contact</a>
