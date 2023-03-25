@@ -21,10 +21,10 @@
           <div class="container-fluid header">
           <nav class="navbar navbar-expand-xl">
             <div>
-              <a href="index.html"><img class="logo-nav d-flex d-xl-none" src="../images/fluff-std.png" alt="Fluff image Audiolusa"></a>
+              <a href="../index.html"><img class="logo-nav d-flex d-xl-none" src="../images/fluff-std.png" alt="Fluff image Audiolusa"></a>
             </div>
             <div>
-              <a href="index.html" class="navbar-brand"><img class="fluff" src="../images/logo-brand-3d.png" alt="Fluff logo Audiolusa"></a>
+              <a href="../index.html" class="navbar-brand"><img class="fluff" src="../images/logo-brand-3d.png" alt="Fluff logo Audiolusa"></a>
             </div>
               <button type="checkbox" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span id="icon">
@@ -128,159 +128,98 @@
         </div>
     </header>
       <main>
-        <section class="h-100 h-custom">
-          <div class="main-contents">
-            <span>-</span>
-              <h1>Basket</h1>
-            <span>-</span>
-          </div>
-          <div class="container">
-            <h4>Shopping cart</h4>
-          </div>
-          <section id="basket-container" class="container center-one my-5">
-            <table class="basket-products" width="100%">
-              <thead>
-                <tr>
-                  <td class="head-label">RMV</td>
-                  <td class="head-label">Product</td>
-                  <td class="head-label">info</td>
-                  <td class="head-label">Price</td>
-                  <td class="head-label">Qty</td>
-                  <td class="head-label">Total</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  </td>
-                  <td>
-                    <img src="../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png" alt="cart item">
-                  </td>
-                  <td>
-                    <h5>Focal Maestro Utopia Evo floorstanding</h5>
-                  </td>
-                  <td>
-                    <p>u$s40000.-</p>
-                  </td>
-                  <td>
-                    <input class="w-75 pl-1" value="1" type="number">
-                  </td>
-                  <td>
-                    <h5>u$s40000.-</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  </td>
-                  <td>
-                    <img src="../images/Focal-dome-flax-1-removebg-preview (1).png" alt="cart item">
-                  </td>
-                  <td>
-                    <h5>Focal Dôme Flax wireless speaker</h5>
-                  </td>
-                  <td>
-                    <p>u$s640.-</p>
-                  </td>
-                  <td>
-                    <input class="w-75 pl-1" value="1" type="number">
-                  </td>
-                  <td>
-                    <h5>
-                      <p>u$s640.-</p>
-                    </h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  </td>
-                  <td>
-                    <img src="../images/universal-wireless-receiver-aptx-removebg-preview.png" alt="cart item">
-                  </td>
-                  <td>
-                    <h5>Focal Universal Wireless receiver</h5>
-                  </td>
-                  <td>
-                    <p>u$s220.-</p>
-                  </td>
-                  <td>
-                    <input class="w-75 pl-1" value="1" type="number">
-                  </td>
-                  <td>
-                    <h5>
-                      <p>u$s220.-</p>
-                    </h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  </td>
-                  <td>
-                    <img src="../images/Sub_Utopia_EM_Colour_Evo-removebg-preview.png" alt="cart item">
-                  </td>
-                  <td>
-                    <h5>Focal Sub Utopia EM Evo subwoofer</h5>
-                  </td>
-                  <td>
-                    <p>u$s25000.-</p>
-                  </td>
-                  <td>
-                    <input class="w-75 pl-1" value="1" type="number">
-                  </td>
-                  <td>
-                    <h5>
-                      <p>u$s25000.-</p>
-                    </h5>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <div class="container">
-            <h4>Total</h4>
-          </div>
-            <section id="basket-bottom" class="container">
-              <table class="amount">
-                <div class="total col-lg-6 col-md-6 col-12 mb-4">
-                  <thead class="thAmount">
-                    <tr>
-                      <td>
-                        <h6>Subtotal</h6>
-                      </td>
-                      <td>
-                        <h6>Tax</h6>
-                      </td>
-                      <td>
-                        <h6>Shipping</h6>
-                      </td>
-                      <td>
-                        <h6>Total</h6>
-                      </td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="total">
-                      <td>
-                        <p>u$s65860.-</p>
-                      </td>
-                      <td>
-                        <p>u$s3293.-</p>
-                      </td>
-                      <td>
-                        <p>u$s475.-</p>
-                      </td>
-                      <td>
-                        <p>u$s69628.-</p>
-                      </td> 
-                    </tr>
-                  </tbody>
+        <div class="main-contents">
+          <span>-</span>
+            <h1>Basket</h1>
+          <span>-</span>
+        </div>
+        <div class="container basket">
+          <h2>Shopping cart</h2>
+          <div class="mainBasket">
+            <div class="products">
+              <div class="product-img">
+                <img src="../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png">
+                <div class="productInfo">
+                  <h4>Focal Maestro Utopia Evo</h4>
+                  <p>floorstanding</p>
+                  <h6>Price: $40000.-</h6>
                 </div>
-            </table>
-            <button type="button">Checkout</button>
-          </section>
+                  <div class="quantity">
+                    <p>Qty:<input type="number" value="2"></p>
+                  </div>
+                <div>
+                  <p class="rmv-btn"><i aria-hidden="true" class="fa fa-trash"></i></p>
+                </div>
+              </div>
+              <div class="product-img">
+                <img src="../images/fiche-produit-3.png">
+                <div class="productInfo">
+                  <h4>Focal Sib Evo dolby atmos</h4>
+                  <p>wireless speaker</p>
+                  <h6>Price: $6200.-</h6>
+                </div>
+                  <div class="quantity">
+                    <p>Qty:<input type="number" value="2"></p>
+                  </div>
+                <div>
+                  <p class="rmv-btn"><i aria-hidden="true" class="fa fa-trash"></i></p>
+                </div>
+              </div>
+              <div class="product-img">
+                <img src="../images/universal-wireless-receiver-aptx-removebg-preview.png">
+                <div class="productInfo">
+                  <h4>Focal universal wireless rc</h4>
+                  <p>wireless</p>
+                  <h6>Price: $220.-</h6>
+                </div>
+                  <div class="quantity">
+                    <p>Qty:<input type="number" value="1"></p>
+                  </div>
+                <div>
+                  <p class="rmv-btn"><i aria-hidden="true" class="fa fa-trash"></i></p>
+                </div>
+              </div>
+              <div class="product-img">
+                <img src="../images/Sub_Utopia_EM_Colour_Evo-removebg-preview.png">
+                <div class="productInfo">
+                  <h4>Focal Sub Utopia Evo EM</h4>
+                  <p>subwoofer</p>
+                  <h6>Price: $25000.-</h6>
+                </div>
+                  <div class="quantity">
+                    <p>Qty:<input type="number" value="1"></p>
+                  </div>
+                <div>
+                  <p class="rmv-btn"><i aria-hidden="true" class="fa fa-trash"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="right-basket">
+              <p>
+                <span>Subtotal</span> 
+                <span>$117.620,00.-</span>
+              </p>
+                <hr>
+              <p>
+                <span>Tax (5%)</span> 
+                <span>$5881,00.-</span>
+              </p>
+                <hr>
+              <p>
+                <span>Shipping</span> 
+                <span>$500,00.-</span>
+              </p>
+                <hr>
+              <p>
+                <span>Total</span>
+                <span>$124.001,00.-</span>
+              </p>
+              <div class="button-check">
+                <button><a href="#">Checkout</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     <footer>
         <div class="container-fluid foot">

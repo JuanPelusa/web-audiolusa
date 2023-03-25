@@ -54,11 +54,26 @@
         text-indent: 5px;
         font-weight: bold;
         margin: 0px 5px 0px 5px;
+        @include desktop {
+            margin-bottom: 5px;
+            width: 80px;
+            border: 1px solid #5f9ea0;
+            text-align: center;
+            text-indent: 0px;
+        }
     }
     a {
         font-size: $xlarge;
         font-weight: lighter;
         text-shadow: 0px 1px rgb(96, 96, 96);
+        @include desktop {
+            font-size: $medium;
+            font-weight: lighter;
+        }
+        @include mobile-index {
+            font-weight: normal;
+            text-shadow: none;
+        }
     }
     .navbar-user {
         width: 1.6em;
@@ -66,44 +81,37 @@
         margin-top: -5px;
     }
     .navbar-cart {
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.4em;
+        height: 1.4em;
         margin-top: -5px;
     }
-    @include desktop {
-        .navbar-search {
-            width: 80px;
-            border: 1px solid #5f9ea0;
-            text-align: center;
-            text-indent: 0px;
-        }
-        a {
-            font-size: $medium;
-            font-weight: lighter;
-        }
-    }
 }   
-@media (min-width: 992px){
-    .modal-lg, .modal-xl {
-        width: 500px;
-    }
-} 
 .btn-close {
     position: absolute;
     padding: 0.50rem;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: red;
-    --bs-btn-close-opacity: 0.8;
+    background-color: rgb(217, 30, 30);
+    --bs-btn-close-opacity: 1;
     --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%);
     top: -15px;
     right: -15px;
+    &:hover {
+        opacity: 1;
+    }
+    @include mobile-index {
+        top: -10px;
+        right: -10px;
+    }
 }
-.modal-dialog {
+.modal-lg, .modal-xl {
     @include mobile-small {
         margin: 18px;
     }
-}  
+    @media (min-width: 992px){
+        --bs-modal-width: 500px;
+    }
+}
 .modal-header {
     display: flex;
     flex-shrink: 0;
@@ -149,7 +157,7 @@
         content:" ";
         height: 2px;
         width: 130px;
-        background: red;
+        background: rgb(217, 30, 30);
         display: block;
         position: absolute;
         top: 50%;
@@ -162,7 +170,7 @@
         content:" ";
         height: 2px;
         width: 130px;
-        background: red;
+        background: rgb(217, 30, 30);
         display: block;
         position: absolute;
         top: 50%;

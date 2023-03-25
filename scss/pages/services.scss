@@ -56,22 +56,25 @@
 }
 .services-text__container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0px;
+    width: 100%;
+    height: 100%;
     font-style: normal;
     font-weight: 350;
     font-size: $large;
     text-align: start;
     line-height: 2;
     @include tablet-portrait {
-        justify-content: center;
-        align-items: center;
         text-align: center;
     }
-    @include mobile-only {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
+    @include pre-tablet {
+        font-size: $small;
+        text-align: center;
+        line-height: 1.5;
+    }
+    @include mobile-index {
         font-size: $small;
         text-align: center;
         line-height: 1.5;
