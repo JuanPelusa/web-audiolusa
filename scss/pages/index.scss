@@ -1,6 +1,7 @@
 //* Main start *//
 
 body {
+    overflow: auto;
     @include tablet {
         background-color: rgb(228, 228, 228);
     }
@@ -14,7 +15,6 @@ body {
 #carouselExampleAutoplaying {
 @include mobile-only {
     max-width: 100%;
-    overflow: hidden;
     }
 }
 .carousel-inner {
@@ -109,6 +109,7 @@ body {
     width: $width - 300px;
     text-align: start;
     letter-spacing: 1px;
+    overflow: hidden;
     h1 {
         font-size: 1.7em;
     }
@@ -136,6 +137,7 @@ body {
     width: 400px;
     text-align: start;
     letter-spacing: 1px;
+    overflow: hidden;
     h2 {
         font-size: 1.7em;
     }
@@ -155,6 +157,9 @@ body {
         width: 100%;
         height: 100%;
     }
+}
+.title-index__left, .title-index__right {
+    overflow: hidden;
 }
 #text-1, #text-2 {
         font-size: $large;
