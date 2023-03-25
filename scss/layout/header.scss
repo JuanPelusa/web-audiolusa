@@ -65,14 +65,12 @@
     a {
         font-size: $xlarge;
         font-weight: lighter;
-        text-shadow: 0px 1px rgb(96, 96, 96);
         @include desktop {
             font-size: $medium;
-            font-weight: lighter;
+            font-weight: normal;
         }
         @include mobile-index {
             font-weight: normal;
-            text-shadow: none;
         }
     }
     .navbar-user {

@@ -83,16 +83,14 @@ h1, h2, h3, h4, h5, h6, li, p, a {
         text-indent: 0px; } }
   #navmenu a {
     font-size: 20px;
-    font-weight: lighter;
-    text-shadow: 0px 1px #606060; }
+    font-weight: lighter; }
     @media (max-width: 1200px) {
       #navmenu a {
         font-size: 16px;
-        font-weight: lighter; } }
+        font-weight: normal; } }
     @media (max-width: 811px) and (min-width: 0px) {
       #navmenu a {
-        font-weight: normal;
-        text-shadow: none; } }
+        font-weight: normal; } }
   #navmenu .navbar-user {
     width: 1.6em;
     height: 1.6em;
@@ -287,15 +285,13 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   padding-bottom: 5px; }
   .center-foot a {
     text-decoration: none;
-    font-weight: lighter;
-    text-shadow: 0px 1px #606060; }
-    @media (max-width: 811px) and (min-width: 0px) {
+    font-weight: lighter; }
+    @media (max-width: 1200px) {
       .center-foot a {
-        font-weight: normal;
-        text-shadow: none; } }
+        font-size: 16px;
+        font-weight: normal; } }
   @media (max-width: 1200px) {
     .center-foot {
-      font-size: 16px;
       margin: 10px 0px 0px 0px;
       align-items: center; } }
 
