@@ -1,5 +1,7 @@
 //* Products General Page *//
 
+//* Tittle rrefference for every product page *//
+
 .main-contents {
     display: flex;
     flex-direction: row;
@@ -26,6 +28,9 @@
         }   
     }
 }
+
+//* Indication Only For Mobile *// 
+
 .display-info{
     justify-content: center;
     align-items: center;
@@ -37,6 +42,9 @@
         font-size: $small;
     }
 }
+
+//* Products Containers *//
+
 #cards-container__products {
     width: 100%;
     display: flex;
@@ -77,6 +85,9 @@
         color: grey;
     }
 }
+
+//* Product Info *//
+
 .info {
     display:none;
     flex-direction: column;
@@ -91,7 +102,6 @@
     top: 0;
     left:0;
     padding: 10px;
-
     border-radius: 7px;
     box-shadow: 0 0 10px grey;
     width:100%;

@@ -11,6 +11,9 @@
     }
    
 }
+
+//* Containers Main *//
+
 .upper-container, .bottom-container {
     margin: 20px 0px;
     img {
@@ -54,6 +57,9 @@
         font-size: $small;
     }
 }
+
+//* Text Containers *//
+
 .services-text__container {
     display: flex;
     justify-content: center;

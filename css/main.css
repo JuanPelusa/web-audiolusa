@@ -342,17 +342,17 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     bottom: 0; } }
 
 /* Pages */
-body {
-  overflow: auto; }
-  @media (max-width: 1180px) and (min-width: 1024px) {
-    body {
-      background-color: #e4e4e4; } }
-  @media (max-width: 992px) and (min-width: 812px) {
-    body {
-      background-color: #e4e4e4; } }
-  @media (max-width: 811px) and (min-width: 0px) {
-    body {
-      background-color: #e4e4e4; } }
+@media (max-width: 1180px) and (min-width: 1024px) {
+  body {
+    background-color: #e4e4e4; } }
+
+@media (max-width: 992px) and (min-width: 812px) {
+  body {
+    background-color: #e4e4e4; } }
+
+@media (max-width: 811px) and (min-width: 0px) {
+  body {
+    background-color: #e4e4e4; } }
 
 @media (width: 811px) {
   #carouselExampleAutoplaying {
@@ -950,6 +950,12 @@ body {
 .mainBasket {
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 811px) {
+    .mainBasket {
+      flex-direction: column; } }
+  @media screen and (max-width: 1200px) {
+    .mainBasket {
+      width: 100%; } }
 
 .products {
   flex: 80%; }
@@ -1023,6 +1029,10 @@ body {
   border-radius: 7px;
   background: #bababa;
   box-shadow: rgba(0, 0, 0, 0.311) 0px 10px 20px 0px; }
+  @media screen and (max-width: 811px) {
+    .right-basket {
+      margin-left: 0;
+      margin-bottom: 20px; } }
   .right-basket hr {
     margin-bottom: 25px; }
   .right-basket p {
@@ -1043,27 +1053,3 @@ body {
     background-color: forestgreen; }
     .right-basket button:hover {
       transform: scaleY(1.07); }
-
-@media screen and (max-width: 700px) {
-  .productInfo h3 {
-    margin-bottom: 15px; }
-  .productInfo h4 {
-    margin-bottom: 20px; }
-  .btn2 {
-    display: none; }
-  .product-img {
-    height: 150px; }
-  .product-img img {
-    height: 150px;
-    width: 200px; } }
-
-@media screen and (max-width: 900px) {
-  .mainBasket {
-    flex-direction: column; }
-  .right-basket {
-    margin-left: 0;
-    margin-bottom: 20px; } }
-
-@media screen and (max-width: 1250px) {
-  .mainBasket {
-    width: 100%; } }

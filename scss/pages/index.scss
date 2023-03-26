@@ -1,7 +1,6 @@
 //* Main start *//
 
 body {
-    overflow: auto;
     @include tablet {
         background-color: rgb(228, 228, 228);
     }

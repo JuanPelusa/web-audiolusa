@@ -5,6 +5,9 @@
     align-items: center;
     
 }
+
+//* Text *//
+
 .container-about__text {
     display: flex;
     justify-content: space-around;
@@ -24,6 +27,9 @@
     align-items: center;
     border-radius: 10px;
 }
+
+//* Text Containers *//
+
 .about-about, .about-mision {
     padding: 0px 15px 0px 15px;
     text-align: start;
