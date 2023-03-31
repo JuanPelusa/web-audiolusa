@@ -1006,10 +1006,9 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 .rmv-btn {
   padding: 10px 15px;
   cursor: pointer; }
-
-.rmv-btn:hover {
-  color: red;
-  transform: scaleY(1.08); }
+  .rmv-btn:hover {
+    color: red;
+    transform: scaleY(1.08); }
 
 .quantity input {
   width: 35px;

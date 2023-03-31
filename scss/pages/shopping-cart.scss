@@ -76,10 +76,10 @@
 .rmv-btn { 
 	padding: 10px 15px;
 	cursor: pointer;
-}
-.rmv-btn:hover {
-	color: red;
-    transform: scaleY(1.08);
+    &:hover {
+        color: red;
+        transform: scaleY(1.08);
+    }
 }
 .quantity {
     input {
