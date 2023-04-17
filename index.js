@@ -1,9 +1,9 @@
 //* Prompts & Cicles *//
 
-let enterName = prompt("Suscribe to our newsletter!\n\n" + "Please enter your name\n");
+let enterName = prompt("Subscribe to our newsletter!\n\n" + "Please enter your name\n");
 while (enterName == ""){
     alert("Please complete the field");
-    enterName = prompt("Suscribe to our newsletter!\n\n" + "Please enter your name\n");
+    enterName = prompt("Subscribe to our newsletter!\n\n" + "Please enter your name\n");
 }
 let enterAge = Number (prompt ("Enter your age\n\n" + "(Need to be of legal age)")); 
 const legalAge = (enterAge >= 18);
@@ -29,45 +29,45 @@ while (enterEmaiL == ""){
     alert("Please complete the field");
     enterEmaiL = prompt ("Enter your email\n");
 }
-alert ("thank's for suscribe!")
+alert ("thank's for subscribe!")
 
 //* Interactive Simulator *//
 
-const suscription1 = "A";
-const suscription2 = "B";
-const suscription3 = "C";
-const suscription4 = "D";
+const subscription1 = "A";
+const subscription2 = "B";
+const subscription3 = "C";
+const subscription4 = "D";
 const coinType = "usd";
 
-let paidSuscription = prompt ("Congratulations! Now you can take your suscription to the next level!\n\n" 
-    + suscription1 + "-" + "One month: usd 4.99.-" + "\n" + suscription2 + "-" + "Three months: usd 13.99.-" + "\n" + suscription3 + "-" + "Six months: usd 24.99.-" + "\n" 
-    + suscription4 + "-" + "One year: usd 44.99.-" + "\n\n" +  "Chose your suscription\n" + "(Use capital letter)");
+let paidSubscription = prompt ("Congratulations! Now you can take your subscription to the next level!\n\n" 
+    + subscription1 + "-" + "One month: usd 4.99.-" + "\n" + subscription2 + "-" + "Three months: usd 13.99.-" + "\n" + subscription3 + "-" + "Six months: usd 24.99.-" + "\n" 
+    + subscription4 + "-" + "One year: usd 44.99.-" + "\n\n" +  "Chose your subscription\n" + "(Use capital letter)");
 let price
 let confirm
 let quantity
 let totalPrice
 
-while (paidSuscription == ""){
+while (paidSubscription == ""){
     alert("No option selected");
-    paidSuscription = prompt ("Congratulations! Now you can take your suscription to the next level!\n\n" 
-    + suscription1 + "-" + "One month: usd 4.99.-" + "\n" + suscription2 + "-" + "Three months: usd 13.99.-" + "\n" + suscription3 + "-" + "Six months: usd 24.99.-" + "\n" 
-    + suscription4 + "-" + "One year: usd 44.99.-" + "\n\n" +  "Chose your suscription\n" + "(Use capital letter)");
+    paidSubscription = prompt ("Congratulations! Now you can take your subscription to the next level!\n\n" 
+    + subscription1 + "-" + "One month: usd 4.99.-" + "\n" + subscription2 + "-" + "Three months: usd 13.99.-" + "\n" + subscription3 + "-" + "Six months: usd 24.99.-" + "\n" 
+    + subscription4 + "-" + "One year: usd 44.99.-" + "\n\n" +  "Chose your subscription\n" + "(Use capital letter)");
 } 
-while ((paidSuscription.toUpperCase() != suscription1) && (paidSuscription.toUpperCase() != suscription2) && (paidSuscription.toUpperCase() != suscription3) && 
-    (paidSuscription.toUpperCase() != suscription4)) {
+while ((paidSubscription.toUpperCase() != subscription1) && (paidSubscription.toUpperCase() != subscription2) && (paidSubscription.toUpperCase() != subscription3) && 
+    (paidSubscription.toUpperCase() != subscription4)) {
     alert("Must enter a valid option");
-    paidSuscription = prompt ("Congratulations! Now you can take your suscription to the next level!\n\n" 
-    + suscription1 + "-" + "One month: usd 4.99.-" + "\n" + suscription2 + "-" + "Three months: usd 13.99.-" + "\n" + suscription3 + "-" + "Six months: usd 24.99.-" + "\n" 
-    + suscription4 + "-" + "One year: usd 44.99.-" + "\n\n" +  "Chose your suscription\n" + "(Use capital letter)");
+    paidSubscription = prompt ("Congratulations! Now you can take your subscription to the next level!\n\n" 
+    + subscription1 + "-" + "One month: usd 4.99.-" + "\n" + subscription2 + "-" + "Three months: usd 13.99.-" + "\n" + subscription3 + "-" + "Six months: usd 24.99.-" + "\n" 
+    + subscription4 + "-" + "One year: usd 44.99.-" + "\n\n" +  "Chose your subscription\n" + "(Use capital letter)");
 }
 
-if (paidSuscription == suscription1){
+if (paidSubscription == subscription1){
     message();
     price = 4.99;
-}else if (paidSuscription == suscription2){
+}else if (paidSubscription == subscription2){
     message();
     price = 13.99;
-}else if (paidSuscription == suscription3){
+}else if (paidSubscription == subscription3){
     message();
     price = 24.99;
 }else {
@@ -76,16 +76,16 @@ if (paidSuscription == suscription1){
 }
 
 do {
-    quantity = Number (prompt ("Enter suscription qty: \n\n"));
+    quantity = Number (prompt ("Enter subscription qty: \n\n"));
 }
 while (isNaN (quantity));
 
 while ((quantity == "") || (quantity == 0)){
     alert("");
-    quantity = prompt ("Enter suscription qty: \n\n");
+    quantity = prompt ("Enter subscription qty: \n\n");
 }
 
-alert ("Your choise: \n\n" + "Quantity:" + " " + quantity + "\n" + "Suscription:" + " " + paidSuscription.toUpperCase());
+alert ("Your choise: \n\n" + "Quantity:" + " " + quantity + "\n" + "Subscription:" + " " + paidSubscription.toUpperCase());
 confirm = prompt("Please confirm:" + "\n\n" + "Enter Y to continue" + "\n" + "or" + "\n" + "Enter N to exit\n" + "(Use capital letter)");
 
 while ((confirm.toUpperCase() != "Y") && (confirm.toUpperCase() != "N")) {
@@ -96,7 +96,7 @@ while ((confirm.toUpperCase() != "Y") && (confirm.toUpperCase() != "N")) {
 //* Functions *//
 
 function message(){
-    alert ("You chose" + " " + paidSuscription.toUpperCase());
+    alert ("You chose" + " " + paidSubscription.toUpperCase());
 }
 function subTotal (quantity, price){
     totalPrice = quantity * price;
@@ -106,7 +106,7 @@ function subTotal (quantity, price){
 
 if (confirm.toUpperCase() == "Y"){
     subTotal(quantity, price);
-    alert ("Your selection is: \n" + "\n" + "Suscription: " + paidSuscription + "\n" + "Qty: " + quantity + "\n" + "Total: " + coinType + " " + totalPrice + ".-");
+    alert ("Your selection is: \n" + "\n" + "Subscription: " + paidSubscription + "\n" + "Qty: " + quantity + "\n" + "Total: " + coinType + " " + totalPrice + ".-");
     alert ("Accept if this is correct");
     alert ("Well done!\n\n" + "Thx for your purchase :)!");
 }else if (confirm.toUpperCase() == "N") {
