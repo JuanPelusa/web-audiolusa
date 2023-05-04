@@ -56,10 +56,13 @@ let paidMagazine = prompt ("Chose one of these three options!\n\n"
 
     if (paidMagazine == magazine1){
         message();
+        price = 1.99;
     }else if (paidMagazine == magazine2){
         message();
+        price = 10.99;
     }else {
         message();
+        price = 19.99;
     }
     
     do {
