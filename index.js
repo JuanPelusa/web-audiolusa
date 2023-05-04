@@ -66,16 +66,16 @@ let paidMagazine = prompt ("Chose one of these three options!\n\n"
     }
     
     do {
-        amount = Number (prompt ("Enter magazine quantity: \n\n"));
+        quantity = Number (prompt ("Enter magazine quantity: \n\n"));
     }
-    while (isNaN (amount));
+    while (isNaN (quantity));
     
-    while ((amount == "") || (amount == 0)){
+    while ((quantity == "") || (quantity == 0)){
         alert("");
-        amount = prompt ("Enter magazine quantity: \n\n");
+        quantity = prompt ("Enter magazine quantity: \n\n");
     }
     
-    alert ("Your choise: \n\n" + "Quantity:" + " " + amount + "\n" + "Option:" + " " + paidMagazine.toUpperCase());
+    alert ("Your choise: \n\n" + "Quantity:" + " " + quantity + "\n" + "Option:" + " " + paidMagazine.toUpperCase());
     confirm = prompt("Please confirm:" + "\n\n" + "Enter Y to continue" + "\n" + "or" + "\n" + "Enter N to exit\n" + "(Use capital letter)");
     
     while ((confirm.toUpperCase() == "Y") && (confirm.toUpperCase() == "N")) {
@@ -88,15 +88,15 @@ let paidMagazine = prompt ("Chose one of these three options!\n\n"
     function message(){
         alert ("You chose" + " " + paidMagazine.toUpperCase());
     }
-    function subTotal (amount, price){
-        totalPrice = amount * price;
+    function subTotal (quantity, price){
+        totalPrice = quantity * price;
     }
     
     //* Final Conditionals *//
     
     if (confirm.toUpperCase() == "Y"){
-        subTotal(amount, price);
-        alert ("Your selection is: \n" + "\n" + "Option: " + paidMagazine + "\n" + "Quantity: " + amount + "\n" + "Total: " + " " + totalPrice + ".-");
+        subTotal(quantity, price);
+        alert ("Your selection is: \n" + "\n" + "Option: " + paidMagazine + "\n" + "Quantity: " + quantity + "\n" + "Total: " + " " + totalPrice + ".-");
         alert ("Accept if this is correct");
         alert ("Well done!\n\n" + "Thx for your purchase :)!");
     }else if (confirm.toUpperCase() == "N") {
