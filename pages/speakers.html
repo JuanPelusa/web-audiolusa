@@ -116,8 +116,9 @@
                       </div>
                     </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./shopping-cart.html"><img class="navbar-cart" src="../images/2205959_cart_bag_internet_shopping_buy_icon.png" alt=""></a>
+                  <li class="nav-item" id="seeCart">
+                    <a class="nav-link" href="./shopping-cart.html"><img class="navbar-cart" 
+                      src="../images/2205959_cart_bag_internet_shopping_buy_icon.png" alt=""><span id="inCartNumber">0</span></a>
                   </li>
                 </ul>
               </div>
@@ -140,168 +141,22 @@
               <div class="display-info d-flex d-xl-none">
                 <span>Touch the corner of the image to see info</span>
               </div>
-              <div id="cards-container__products">
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_1">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second"> 3-way column loudspeaker
-                      High efficiency, high power handling
-                      Utopia III technologies: Beryllium, IAL2™,
-                      TMD suspension, NIC magnet, Focus Time™,
-                      OPC+™, W™, Power Flower™,
-                      Gamma Structure™
-                      Exclusive technology: MDS
-                      (Magnetic Damping System)
-                      Customisable sound with adjustable bass,
-                      mid-range and treble levels
-                      100% made by Focal
-                    </p>
-                    <p class="bk-second">USD40000.-</p>
-                    <button class="add-to__cart" id="addToCart_1">BUY NOW</button>
-                  </div>
+              <div id="cards-container__products" class="container-products">
+                <div class="product-card" id="productTitle_1" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_2">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second">Diamond tweeter
-                      Solid body Tweeter-on-Top
-                      Continuum™ cone FST
-                      Anti-Resonance plug
-                      Biomimetic Suspension
-                      Turbine™ Head Matrix™
-                      Aerofoil™ cone bass units
-                      Flowport
-                      3-way vented-box system
-                      Frequency range
-                      13Hz to 35kHz
-                      Harmonic distortion
-                      2nd and 3rd harmonics (90dB,1m on axis)
-                      + 1% 30Hz – 20kHz
-                      + 0.3% 100Hz – 20kHz
-                    </p>
-                    <p class="bk-second">USD41000.-</p>
-                    <button class="add-to__cart" id="addToCart_2">BUY NOW</button>
-                  </div>
+                <div class="product-card" id="productTitle_2" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_3">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second">Frequency Range [+/- 3] dB [Hz] 35-30.000
-                      Frequency Range [+/- 3] dB [Hz] 35-30.000
-                      Maximum SPL [dB] 112                    
-                      Crossover Frequencies [Hz] 550/3.100/15.000
-                      Crossover Principle 3+½-way
-                      HFD 1 x 29 mm soft dome
-                      1 x 10 x 55 mm
-                      ribbon,
-                      Low Frequency/midrange Driver(s) 2 x 8” / 1 x 6½”                   
-                      Bass Reflex Tuning Frequency [Hz] 28.0 
-                      Bi-wire / Bi-Amp 
-                    </p>
-                    <p class="bk-second">USD15000.-</p>
-                    <button class="add-to__cart" id="addToCart_3">BUY NOW</button>
-                  </div>
+                <div class="product-card" id="productTitle_3" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_4">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second">Type of loudspeaker 2-way, compact bass-reflex loudspeaker
-                      Drivers Power Flower “W” 61/2" (16.5cm) Woofer
-                      IAL2 pure Beryllium inverted dome 1"
-                      (27mm) tweeter (with protective grille)
-                      Dedicated aluminum/MDF Graphite Black finish
-                      Helmholtz resonator
-                      Frequency response (±3dB) 44Hz - 40kHz
-                      Low frequency point (-6dB) 40Hz
-                      Sensitivity (2.83V/1m) 89dB                 
-                    </p>
-                    <p class="bk-second">USD12000.-</p>
-                    <button class="add-to__cart" id="addToCart_4">BUY NOW</button>
-                  </div>
+                <div class="product-card" id="productTitle_4" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_5">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second">Decoupled Carbon Dome tweeter
-                      Solid Body Tweeter-on-Top
-                      Continuum™ cone bass/ midrange
-                      Flowport™
-                      2-way vented-box system
-                      Frequency range
-                      -6dB at 45Hz and 33kHz,
-                      Frequency response
-                      50Hz - 28kHz ±3dB,
-                      Harmonic distortion
-                      2nd and 3rd harmonics (90dB, 1m)
-                      + 1% 100Hz - 22kHz
-                      + 0.5% 150Hz - 20kHz,          
-                      Sensitivity
-                      88dB spl (2.83Vrms, 1m)
-                    </p>
-                    <p class="bk-second">USD3200.-</p>
-                    <button class="add-to__cart" id="addToCart_5">BUY NOW</button>
-                  </div>
+                <div class="product-card" id="productTitle_5" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_6">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second">Frequency Range [+/- 3] dB [Hz] 50 -26,000, 
-                      Sensitivity [2.83V/1m] [dB] 87, 
-                      Nominal Impedance [ohms] 4,
-                      Maximum SPL [dB] 107,
-                      Recommended Amp. Power [Watt] 40-150,
-                      Crossover Frequency [Hz] 3,100,
-                      Crossover Principle 2-way,
-                      High Frequency Driver 1 x 29 mm soft dome,
-                      Low Frequency Driver(s) 1 x 6½”,                    
-                      Bass Reflex Tuning Frequency [Hz] 42.5
-                    </p>
-                    <p class="bk-second">USD3700.-</p>
-                    <button class="add-to__cart" id="addToCart_6">BUY NOW</button>
-                  </div>
+                <div class="product-card" id="productTitle_6" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_7">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second">Type Stackable passive subwoofer
-                      Drivers Electro-Magnetic 13" (33cm) “W” bass
-                      driver
-                      Frequency response (+/- 3dB) 22Hz - 500Hz
-                      Response at - 6dB 19Hz
-                      Sensitivity (2.83V / 1m) 93dB
-                      Nominal impedance 8 Ω
-                      Minimal impedance 5.5 Ω
-                      Recommended amp power 500 - 1,000W
-                      Dimensions (HxLxD) 634 x 483 x 622mm
-                      Weight (unit) 158.5lbs (72kg)
-                    </p>
-                    <p class="bk-second">USD25000.-</p>
-                    <button class="add-to__cart" id="addToCart_7">BUY NOW</button>
-                  </div>
-                  </div>
-                <div class="product-card" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
-                  <div class="title-card" id="productTitle_8">
-                  </div>
-                  <div class="info">
-                    <p class="bk-second">Frecuency reponse 29Hz - 120Hz +/- 3dB
-                      Maximun acoustic output 116 dB
-                      Amplifier all Digital
-                      Amplifier power (cont/peak) 200W/400W
-                      Amplifier features Volume, Low-pass, 0/180 phase, Auto Power On
-                      Driver components 12” high excursion spun-copper IMG woofer
-                      Enclosure type Bass-Reflex via rear-firing port
-                      Inputs Line level/LFE RCA jacks                    
-                    </p>
-                    <p class="bk-second">USD400.-</p>
-                    <button class="add-to__cart" id="addToCart_8">BUY NOW</button>
-                  </div>
+                <div class="product-card" id="productTitle_7" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
+                </div>
+                <div class="product-card" id="productTitle_8" data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out">
                 </div>
               </div>
             </section>
@@ -334,6 +189,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <script src="../main.js"></script>
+    <script src="../js/products.js"></script>
   </body>
 </html>
