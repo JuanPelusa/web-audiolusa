@@ -82,63 +82,20 @@
 
 }
 
-.carrito-acciones {
-    display: flex;
-    justify-content: space-between;
-}
 
-.carrito-acciones-vaciar {
-    border: 0;
-    background-color: var(--clr-gray);
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--clr-main);
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.carrito-acciones-derecha {
-    display: flex;
-}
-
-.carrito-acciones-total {
-    display: flex;
-    background-color: var(--clr-gray);
-    padding: 1rem;
-    color: var(--clr-main);
-    text-transform: uppercase;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    gap: 1rem;
-}
-
-.carrito-acciones-comprar {
-    border: 0;
-    background-color: var(--clr-main);
-    padding: 1rem;
-    color: var(--clr-white);
-    text-transform: uppercase;
-    cursor: pointer;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
 
 //* Total Price *//
 
 .right-basket {
     display: flex;
     flex-direction: column;
-	flex: 25%;
-	margin-left: 20px;
 	padding: 20px;
-	height: 450px;
+	height:80px;
     border: 1px solid #afafaf;
 	border-radius: 7px;
 	background: #bababa;
 	box-shadow: rgba(0, 0, 0, 0.311) 0px 10px 20px 0px;
     @media screen and (max-width: $tablet) {
-        
-		margin-left: 0;
 		margin-bottom: 20px;
 	}
     hr {

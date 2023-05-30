@@ -15,7 +15,7 @@ function loadProductsToCart() {
 if(productsInCart && productsInCart.length > 0) {
 
     contProducts.classList.remove('disabled');
-    contenedorRightActions.classList.remove('disabled');
+
     
     contProducts.innerHTML = "";
     
@@ -43,7 +43,7 @@ if(productsInCart && productsInCart.length > 0) {
     }
     else{
         contProducts.classList.add('disabled');
-        contenedorRightActions.classList.add('disabled');
+
         
     };
     
