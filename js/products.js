@@ -173,18 +173,25 @@ const addTo = document.querySelectorAll("allProductsButtons");
 let addButtons = document.querySelectorAll(".add");
 const inCart = document.querySelector("#inCartNumber");
 
+const title = document.querySelector(`#productTitle`);
+
 function loadProducts() {
+
+    title.innerHTML = "";
     
-    products.forEach((product, pPage) => {
-        const title = document.querySelector(`#productTitle_${pPage + 1}`);
+    products.forEach(product => {
+        
         const content = document.createElement("div");
+        content.classList.add('product-card')
         content.innerHTML =
         `<img src="${product.image}">
+        <div>
         <h5 class="title-card">${product.name}</h5>
         <p class="description">${product.description}</p>
+        </div>
         <p class="info">${product.specs}</p>
         <p class="infoPrice">${currencyType} ${product.price}
-        <button class="add" id=${product.id}>BUY NOW</button>
+        <button class="add" id="${product.id}">BUY NOW</button>
         `;
 
         title.append(content)
@@ -202,7 +209,17 @@ function updateButtons() {
     })
 }
 
-const productsInCart = [];
+let productsInCart;
+
+let productsInCartLS = (localStorage.getItem("products-in-cart"));
+
+if (productsInCartLS) {
+    productsInCart = JSON.parse(productsInCartLS);
+    updateInCart()
+} else {
+    productsInCart = [];
+}
+
 
 function addToCart(e) {
 

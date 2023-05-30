@@ -32,8 +32,6 @@
 
 //* Main Products *//
 
-/** CARRITO **/
-
 .carrito-vacio,
 .carrito-comprado {
     color: var(--clr-main);
@@ -65,7 +63,7 @@
     }
 }
 
-.cartProductErase {
+.eraseProduct {
     height: 30px;
     width: 20px;
     border: 0;
