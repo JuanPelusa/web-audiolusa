@@ -1,4 +1,4 @@
-let productsInCart = (localStorage.getItem("products-in-cart"));
+let productsInCart = localStorage.getItem("products-in-cart");
 productsInCart = JSON.parse(productsInCart);
 
 const contProducts = document.querySelector('#productsInCart');
@@ -12,15 +12,13 @@ const currencyType = "usd";
 
 function loadProductsToCart() {
 
-if(productsInCart) {
-
-    
+if(productsInCart && productsInCart.length > 0) {
 
     contProducts.classList.remove('disabled');
     contenedorRightActions.classList.remove('disabled');
     
-
     contProducts.innerHTML = "";
+    
     productsInCart.forEach(product => {
         const div = document.createElement("div");
         div.classList.add("cartProduct");
@@ -40,13 +38,15 @@ if(productsInCart) {
         ;
         contProducts.append(div)
     })
+    updateButtonsErase()
+
     }
     else{
         contProducts.classList.add('disabled');
         contenedorRightActions.classList.add('disabled');
         
     };
-    updateButtonsErase()
+    
     
 }
 
@@ -69,12 +69,8 @@ function updateButtonsErase() {
 
         localStorage.setItem('products-in-cart', JSON.stringify(productsInCart))
     }
-    eraseAll.addEventListener("click", eraseCart);
-    function eraseCart() {
-        productsInCart.length = 0
-        localStorage.setItem('products-in-cart', JSON.stringify(productsInCart))
-        loadProductsToCart();
-    }
+    
+
 
     function finalPrice() {
         total.innerText = productsInCart((acc, product) => acc (product.price * product.quantity), 0);
