@@ -173,11 +173,11 @@ const addTo = document.querySelectorAll("allProductsButtons");
 let addButtons = document.querySelectorAll(".add");
 const inCart = document.querySelector("#inCartNumber");
 
-const title = document.querySelector(`#productTitle`);
+const productsContainer = document.querySelector(`#productTitle`);
 
 function loadProducts() {
 
-    title.innerHTML = "";
+    productsContainer.innerHTML = "";
     
     products.forEach(product => {
         
@@ -194,17 +194,18 @@ function loadProducts() {
         <button class="add" id="${product.id}">BUY NOW</button>
         `;
 
-        title.append(content)
+        productsContainer.append(content)
+        
     })
-    updateButtons()
+    addToButtons()  
 }
 
     loadProducts();
 
-function updateButtons() {
-    addButtons = document.querySelectorAll(".add");
+function addToButtons() {
+    addToButtons = document.querySelectorAll(".add");
 
-    addButtons.forEach(buttons => {
+    addToButtons.forEach(buttons => {
         buttons.addEventListener("click", addToCart);
     })
 }
@@ -245,15 +246,3 @@ function updateInCart() {
     inCartNumber.innerText = newInCart;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-

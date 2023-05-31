@@ -1,25 +1,27 @@
-let productsInCart = localStorage.getItem("products-in-cart");
-productsInCart = JSON.parse(productsInCart);
+let productsInCart = JSON.parse(localStorage.getItem("products-in-cart"));
 
+const contEmpty = document.querySelector('#emptycart');
 const contProducts = document.querySelector('#productsInCart');
-const contenedorRightActions = document.querySelector("#rightActions");
-const contenedorbuyCart = document.querySelector("#buyCart");
+//const contenedorRightActions = document.querySelector("#rightActions");
+//const contenedorbuyCart = document.querySelector("#buyCart");
 let eraseButton = document.querySelectorAll('.eraseProduct');
-const eraseAll = document.querySelector('#erase-cart');
+//const eraseAll = document.querySelector('#erase-cart');
 const contTotal = document.querySelector('#total');
 
 const currencyType = "usd";
 
 function loadProductsToCart() {
 
-if(productsInCart && productsInCart.length > 0) {
+if(productsInCart && productsInCart.length >= 0) {
 
+    contEmpty.classList.add('disabled');
     contProducts.classList.remove('disabled');
-
+    contTotal.classList.remove("disable");
     
     contProducts.innerHTML = "";
     
     productsInCart.forEach(product => {
+        
         const div = document.createElement("div");
         div.classList.add("cartProduct");
         div.innerHTML =
@@ -39,10 +41,12 @@ if(productsInCart && productsInCart.length > 0) {
         contProducts.append(div)
     })
     updateButtonsErase()
-
     }
     else{
+
+        contEmpty.classList.remove('disabled');
         contProducts.classList.add('disabled');
+        contTotal.classList.add("disabled");
 
         
     };
@@ -70,12 +74,6 @@ function updateButtonsErase() {
         localStorage.setItem('products-in-cart', JSON.stringify(productsInCart))
     }
     
-
-
-    function finalPrice() {
-        total.innerText = productsInCart((acc, product) => acc (product.price * product.quantity), 0);
-        
-    }
 
 
 

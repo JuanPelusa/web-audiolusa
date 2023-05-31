@@ -1005,7 +1005,6 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .right-basket {
   display: flex;
-  flex-direction: column;
   padding: 20px;
   height: 80px;
   border: 1px solid #afafaf;
