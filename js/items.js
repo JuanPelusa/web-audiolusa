@@ -68,9 +68,9 @@ function addToCart(e) {
         
         duration: 2000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "center", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top", 
+        position: "center", 
+        stopOnFocus: true, 
         style: {
             color: "#000000",
             background: "linear-gradient(to right, #ff8c00, #fbc056)",
@@ -78,7 +78,7 @@ function addToCart(e) {
             textTransform: "uppercase",
             fontSize: ".75rem"
         },
-        onClick: function(){} // Callback after click
+        onClick: function(){}  
       }).showToast();
 
     const idButton = e.currentTarget.id;

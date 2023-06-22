@@ -2,8 +2,6 @@ let productsInCart = JSON.parse(localStorage.getItem("products-in-cart"));
 
 
 const contProducts = document.querySelector('#productsInCart');
-//const contenedorRightActions = document.querySelector("#rightActions");
-//const contenedorbuyCart = document.querySelector("#buyCart");
 let eraseButton = document.querySelectorAll('.eraseProduct');
 const eraseAll = document.querySelector('#removeCart');
 const contTotal = document.querySelector('#total');
@@ -68,9 +66,9 @@ function updateButtonsErase() {
             text: "Product removed",
             duration: 2000,
             close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "center", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top", 
+            position: "center",
+            stopOnFocus: true,
             style: {
                 color: "#000000",
                 background: "linear-gradient(to right, #ff0000, #ff3636)",
@@ -78,7 +76,7 @@ function updateButtonsErase() {
                 textTransform: "uppercase",
                 fontSize: ".75rem"
             },
-            onClick: function(){} // Callback after click
+            onClick: function(){}
         }).showToast();
 
         const idButton = e.currentTarget.id;
@@ -119,12 +117,12 @@ function buyBasket() {
             )
         }else if (
                 result.dismiss === Swal.DismissReason.cancel
-              ) {
+            )   {
                 swalWithBootstrapButtons.fire(
-                  'Dont worry, it always a next time!',
-                  'See you soon!'
+                    'Dont worry, it always a next time!',
+                    'See you soon!'
                 )
-              }
+            }
             productsInCart.length = 0;
             localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
             loadProductsToCart();
@@ -134,7 +132,14 @@ function buyBasket() {
 eraseAll.addEventListener("click", removeCart);
 
 function removeCart() {
-swal.fire({
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+    })
+    swalWithBootstrapButtons.fire({
         title: 'do you want to erase all the products?',
         icon: 'question',
         showCancelButton: true,
@@ -143,7 +148,7 @@ swal.fire({
         cancelButtonText: 'no'
     }).then((result) => {
         if (result.isConfirmed) {
-            swal.fire(
+            swalWithBootstrapButtons.fire(
                 'Sorry to hear that :(',
                 'See you soon!'
             )
