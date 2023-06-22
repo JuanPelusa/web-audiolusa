@@ -1025,16 +1025,17 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     justify-content: center;
     margin-bottom: 5px;
     font-size: 20px; }
-  .right-basket button {
-    width: 60px;
-    height: 40px;
-    margin-top: 40px;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    background-color: #ff7811; }
-    .right-basket button:hover {
-      transform: scaleY(1.07); }
+
+.add {
+  width: 60px;
+  height: 40px;
+  margin-top: 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff7811; }
+  .add:hover {
+    transform: scaleY(1.07); }
 
 #removeCart {
   background-color: seagreen;

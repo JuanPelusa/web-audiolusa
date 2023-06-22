@@ -109,17 +109,18 @@
         margin-bottom: 5px;
         font-size: 20px;
     }
-    button {
-        width: 60px;
-        height: 40px;
-        margin-top: 40px;
-        font-size: $large;
-        border: none;
-        border-radius: 10px;
-        background-color: rgb(255, 120, 17);
-            &:hover {
-            transform: scaleY(1.07);
-        }
+}
+
+.add {
+    width: 60px;
+    height: 40px;
+    margin-top: 40px;
+    font-size: $large;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 120, 17);
+        &:hover {
+        transform: scaleY(1.07);
     }
 }
 
