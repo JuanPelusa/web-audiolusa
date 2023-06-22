@@ -91,8 +91,6 @@ function updateButtonsErase() {
     }
     
     function updateTotal() {
-        total.innerHTML = 
-        '<span class="d-none">0</span>'
         total.innerText = productsInCart.reduce((acc, product) => acc + (currencyType + product.price * product.quantity), 0)
     };
 
