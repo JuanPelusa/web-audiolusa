@@ -65,14 +65,14 @@ if (productsInCartLS) {
 function addToCart(e) {
     Toastify({
         text: "Product added",
-        duration: 3000,
+        duration: 2000,
         close: true,
         gravity: "top", // `top` or `bottom`
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
           background: "linear-gradient(to right, #ff8c00, #fbc056)",
-          borderRadius: "2rem",
+          borderRadius: "1rem",
           textTransform: "uppercase",
           fontSize: ".75rem"
         },
