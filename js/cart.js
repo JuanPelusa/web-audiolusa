@@ -97,7 +97,14 @@ function updateButtonsErase() {
 buyButton.addEventListener("click", buyBasket);
 
 function buyBasket() {
-    Swal.fire({
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+      })
+      swalWithBootstrapButtons.fire({
         title: 'comfirm your purchase',
         showCancelButton: true,
         focusConfirm: false,
@@ -105,10 +112,9 @@ function buyBasket() {
         cancelButtonText: 'no'
     }).then((result) => {
         if (result.isConfirmed) {
-            swal.fire ({
-                title: 'Thank for buy',
-                title: 'See you soon!'
-            }
+            swal.fire (
+                'Thank for buy',
+                'See you soon!'
             )
             productsInCart.length = 0;
             localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
