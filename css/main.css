@@ -1045,4 +1045,5 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   width: 40px; }
 
 .swal2-confirm, .swal2-cancel {
+  width: 40px;
   margin: 8px; }

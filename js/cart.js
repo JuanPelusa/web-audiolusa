@@ -129,19 +129,29 @@ function buyBasket() {
             localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
             loadProductsToCart();
         });
-
-    productsInCart.length = 0;
-    localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
-    loadProductsToCart()
 }
 
 eraseAll.addEventListener("click", removeCart);
 
 function removeCart() {
-    
-    productsInCart.length = 0;
-    localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
-    loadProductsToCart()
+swal.fire({
+        title: 'do you want to erase all the products?',
+        icon: 'question',
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'yes',
+        cancelButtonText: 'no'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            swal.fire(
+                'Sorry to hear that :(',
+                'See you soon!'
+            )
+            productsInCart.length = 0;
+            localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
+            loadProductsToCart()
+        }
+      });
 }
 
 
