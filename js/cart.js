@@ -41,6 +41,7 @@ if(productsInCart && productsInCart.length >= 0) {
         contProducts.append(div)
     })
     updateButtonsErase()
+    buyBasket()
     }
     else{
 
