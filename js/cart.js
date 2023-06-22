@@ -97,8 +97,10 @@ function updateButtonsErase() {
 buyButton.addEventListener("click", buyBasket);
 
 function buyBasket() {
-
-    productsInCart.length >= 0;
+    const idButton = e.currentTarget.id;
+    const index = productsInCart.findIndex(product => product.id === idButton);
+    productsInCart.splice(index, 1);
+    loadProductsToCart();
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
 
     contProducts.classList.add('disabled');
