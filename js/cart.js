@@ -98,8 +98,7 @@ buyButton.addEventListener("click", buyBasket);
 
 function buyBasket() {
 
-
-    productsInCart.length = 0;
+    productsInCart.length >= 0;
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
 
     contProducts.classList.add('disabled');
