@@ -91,7 +91,7 @@ function updateButtonsErase() {
     }
     
     function updateTotal() {
-        total.innerText = productsInCart.reduce((acc, product) => acc + (currencyType + product.price * product.quantity))
+        total.innerText = productsInCart.reduce((acc, product) => acc + (currencyType + product.price * product.quantity), 0)
     };
 
 buyButton.addEventListener("click", buyBasket);
