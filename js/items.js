@@ -16,11 +16,11 @@ const inCart = document.querySelector("#inCartNumber");
 
 const productsContainer = document.querySelector(`#productTitle`);
 
-function loadProducts() {
+function loadProducts(productChosen) {
 
     productsContainer.innerHTML = "";
     
-    productsChose.forEach(product => {
+    productChosen.forEach(product => {
         
         const content = document.createElement("div");
         content.classList.add('product-card')
