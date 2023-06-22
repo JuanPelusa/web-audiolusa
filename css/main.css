@@ -1043,3 +1043,6 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   margin-top: 10px;
   height: 25px;
   width: 40px; }
+
+.swal2-confirm, .swal2-cancel {
+  margin: 8px; }
