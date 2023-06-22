@@ -50,13 +50,6 @@ if(productsInCart && productsInCart.length >= 0) {
     updateTotal();
 }
 
-if (productsInCartLS) {
-    productsInCart = JSON.parse(productsInCartLS);
-    updateInCart()
-} else {
-    productsInCart = [];
-}
-
 loadProductsToCart();
 
 function updateButtonsErase() {
