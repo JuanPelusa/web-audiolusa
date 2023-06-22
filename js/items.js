@@ -65,6 +65,7 @@ if (productsInCartLS) {
 function addToCart(e) {
     Toastify({
         text: "Product added",
+        color: "black",
         duration: 2000,
         close: true,
         gravity: "top", // `top` or `bottom`

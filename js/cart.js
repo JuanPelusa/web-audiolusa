@@ -65,6 +65,7 @@ function updateButtonsErase() {
 
         Toastify({
             text: "Product removed",
+            color: "black",
             duration: 2000,
             close: true,
             gravity: "top", // `top` or `bottom`
