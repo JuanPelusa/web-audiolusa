@@ -105,6 +105,10 @@ function buyBasket() {
         cancelButtonText: 'no'
     }).then((result) => {
         if (result.isConfirmed) {
+            swal.fire (
+                'Thank for buy'
+                'See you soon!'
+            )
             productsInCart.length = 0;
             localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
             loadProductsToCart();
