@@ -105,6 +105,7 @@ function buyBasket() {
         buttonsStyling: false
       })
       swalWithBootstrapButtons.fire({
+        icon: 'success',
         title: 'comfirm your purchase',
         showCancelButton: true,
         focusConfirm: false,
@@ -112,15 +113,22 @@ function buyBasket() {
         cancelButtonText: 'no'
     }).then((result) => {
         if (result.isConfirmed) {
-            swal.fire (
+            swalWithBootstrapButtons.fire (
                 'Thank for buy',
                 'See you soon!'
             )
+        }else if (
+                result.dismiss === Swal.DismissReason.cancel
+              ) {
+                swalWithBootstrapButtons.fire(
+                  'Dont worry, it always a next time!',
+                  'See you soon!'
+                )
+              }
             productsInCart.length = 0;
             localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
             loadProductsToCart();
-        }
-      })
+        });
 
     productsInCart.length = 0;
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
