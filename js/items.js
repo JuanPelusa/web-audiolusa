@@ -71,7 +71,7 @@ function addToCart(e) {
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, ##ff8c00, #fbc056)",
+          background: "linear-gradient(to right, #ff8c00, #fbc056)",
           borderRadius: "2rem",
           textTransform: "uppercase",
           fontSize: ".75rem"
