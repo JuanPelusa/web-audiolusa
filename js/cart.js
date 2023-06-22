@@ -50,7 +50,12 @@ if(productsInCart && productsInCart.length >= 0) {
     updateTotal();
 }
 
-updateInCart();
+if (productsInCartLS) {
+    productsInCart = JSON.parse(productsInCartLS);
+    updateInCart()
+} else {
+    productsInCart = [];
+}
 
 loadProductsToCart();
 
