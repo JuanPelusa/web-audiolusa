@@ -1,6 +1,6 @@
 /* General*/
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:ital,wght@1,700&family=Unbounded:wght@600&display=swap");
-.infoPrice button, .form-items button {
+.add, .form-items button {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -680,18 +680,19 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   justify-content: center;
   align-items: center;
   font-weight: bolder; }
-  .infoPrice button {
-    margin-top: 15px;
-    background-color: #ff8c00;
-    transition: all 200ms ease-in-out; }
-    .infoPrice button:hover {
-      color: whitesmoke;
-      background-color: forestgreen;
-      border: 1px solid white;
-      cursor: pointer;
-      transform: scale 1.5 ease-in-out;
-      transform: translateY(-3px);
-      transition: all 0.3s ease-in-out; }
+
+.add {
+  margin-top: 15px;
+  background-color: #ff8c00;
+  transition: all 200ms ease-in-out; }
+  .add:hover {
+    color: whitesmoke;
+    background-color: forestgreen;
+    border: 1px solid white;
+    cursor: pointer;
+    transform: scale 1.5 ease-in-out;
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out; }
 
 .service-one, .service-two {
   display: flex;
@@ -1027,10 +1028,10 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     font-size: 20px; }
 
 .add {
-  width: 60px;
+  width: 80px;
   height: 40px;
   margin-top: 40px;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   border-radius: 10px;
   background-color: #ff7811; }
