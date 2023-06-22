@@ -1,4 +1,4 @@
-const products = [];
+let products = [];
 
 fetch("../js/products.json")
 .then(response => response.json())
@@ -40,6 +40,7 @@ function loadProducts() {
     })
     addToButtons()  
 }
+
 
 function addToButtons() {
     addToButtons = document.querySelectorAll(".add");
