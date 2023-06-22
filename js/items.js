@@ -1,10 +1,7 @@
-//* Object constructor *\\
+const products = [];
 
-
-let products = [];
-
-fetch('../js/products.json')
-.then(Response => Response.json())
+fetch("../js/products.json")
+.then(response => response.json())
 .then(data => {
     products = data;
     loadProducts(products);
@@ -23,7 +20,7 @@ function loadProducts() {
 
     productsContainer.innerHTML = "";
     
-    products.forEach(product => {
+    productsChose.forEach(product => {
         
         const content = document.createElement("div");
         content.classList.add('product-card')
@@ -43,8 +40,6 @@ function loadProducts() {
     })
     addToButtons()  
 }
-
-    loadProducts();
 
 function addToButtons() {
     addToButtons = document.querySelectorAll(".add");

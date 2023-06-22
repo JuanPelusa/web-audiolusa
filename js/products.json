@@ -1,9 +1,9 @@
+
 [
     {
         "id": "Focal_01",
         "name": "Focal Maestro Utopia Evo",
         "description": "Floorstanding loudspeaker",
-        
         "price": "40000",
         "quantity": "1",
         "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
@@ -13,7 +13,6 @@
         "id": "B&W_02",
         "name": "Bowers & Wilkins 801",
         "description": "Floorstanding loudspeaker",
-        
         "price": "41000",
         "quantity": "1",
         "image": "../images/801-d4-satin-rosenut-removebg-preview.png",
@@ -23,7 +22,6 @@
         "id": "Dali_03",
         "name": "Dali Epicon 8",
         "description": "Floorstanding loudspeaker",
-        
         "quantity": "1",
         "image": "../images/Dali_EPICON_8_walnut-removebg-preview.png",
         "total":"15000"
@@ -32,7 +30,6 @@
         "id": "Dali_04",
         "name": "Diablo Utopia Evo",
         "description": "Bookshelf 2-way loudspeaker",
-        
         "price": "12000",
         "quantity": "1",
         "image": "../images/Diablo_Utopia_Colour_Evo_-_Focal-removebg-preview.png",
@@ -41,8 +38,7 @@
     {
         "id":"B&W_05",
         "name": "Bowers & Wilkins 705 s3",
-        "description": "Bookshelf 2-way loudspeaker",
-               
+        "description": "Bookshelf 2-way loudspeaker",               
         "price": "3200",
         "quantity": "1",
         "image": "../images/705-s3_mocha-removebg-preview.png",
@@ -52,7 +48,6 @@
         "id": "Dali_06",
         "name": "Dali Rubicon 2 (pair)",
         "description": "Bookshelf 2-way loudspeaker",
-        
         "price": "3700",
         "quantity": "1",
         "image": "../images/Dali_RUBICON_2-removebg-preview.png",
@@ -62,10 +57,8 @@
         "id": "Focal_07",
         "name": "Focal Sub Utopia EM Evo",
         "description": "Subwoofer",
-        
         "price": "25000",
         "quantity": "1",
-        
         "image": "../images/Sub_Utopia_EM_Colour_Evo-removebg-preview.png",
         "total":"25000"
     },
@@ -73,7 +66,6 @@
         "id": "Klipsch_08",
         "name": "Klipsch R120sw",
         "description": "Subwoofer",
-        
         "price": "400",
         "quantity": "1",
         "image": "../images/-120sw_Subwoofer-removebg-preview.png",
