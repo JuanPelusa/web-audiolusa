@@ -47,7 +47,7 @@ if(productsInCart && productsInCart.length >= 0) {
         contProducts.classList.add('disabled');
         contTotal.classList.add("disabled");
 
-        buyBasket()
+        
     };
     updateTotal();
 }
@@ -95,13 +95,12 @@ function updateButtonsErase() {
     };
 
 buyButton.addEventListener("click", buyBasket);
+
 function buyBasket() {
 
-    productsInCart.splice(0, productsInCart.length);
+    productsInCart.length = 0;
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
-
-    contProducts.classList.add('disabled');
-    contTotal.classList.remove('disabled');
+    loadProductsToCart()
 }
 
 
