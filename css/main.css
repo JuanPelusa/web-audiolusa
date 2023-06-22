@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   @media (max-width: 992px) and (min-width: 812px) {
     .header {
       background-color: #797979; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .header {
       background-color: #797979; } }
 
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
       #navmenu a {
         font-size: 16px;
         font-weight: normal; } }
-    @media (max-width: 811px) and (min-width: 0px) {
+    @media (max-width: 820px) and (min-width: 0px) {
       #navmenu a {
         font-weight: normal; } }
   #navmenu .navbar-user {
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   right: -15px; }
   .btn-close:hover {
     opacity: 1; }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .btn-close {
       top: -10px;
       right: -10px; } }
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     position: absolute;
     top: 50%;
     left: 0; }
-    @media (max-width: 811px) and (min-width: 0px) {
+    @media (max-width: 820px) and (min-width: 0px) {
       .hr-lines::before {
         width: 80px; } }
   .hr-lines::after {
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     position: absolute;
     top: 50%;
     right: 0; }
-    @media (max-width: 811px) and (min-width: 0px) {
+    @media (max-width: 820px) and (min-width: 0px) {
       .hr-lines::after {
         width: 80px; } }
 
@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   @media (max-width: 992px) and (min-width: 812px) {
     .foot {
       background-color: #797979; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .foot {
       flex-direction: column;
       justify-content: center;
@@ -349,18 +349,18 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   body {
     background-color: #e4e4e4; } }
 
-@media (max-width: 811px) and (min-width: 0px) {
+@media (max-width: 820px) and (min-width: 0px) {
   body {
     background-color: #e4e4e4; } }
 
-@media (width: 811px) {
+@media (width: 820px) {
   #carouselExampleAutoplaying {
     max-width: 100%; } }
 
 .carousel-inner {
   border-bottom-width: thin;
   border-bottom-style: inset; }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .carousel-inner {
       overflow: hidden;
       background-color: #797979; } }
@@ -377,7 +377,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     height: 30px;
     border: 0;
     border-radius: 70px; }
-    @media (max-width: 811px) and (min-width: 0px) {
+    @media (max-width: 820px) and (min-width: 0px) {
       .carousel-indicators [data-bs-target] {
         width: 2px;
         height: 15px;
@@ -395,7 +395,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .right {
   padding: 0px; }
-  @media (width: 811px) {
+  @media (width: 820px) {
     .right {
       padding: 0px 12px 0px 12px; } }
 
@@ -408,11 +408,11 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     .left-row {
       flex-direction: row;
       margin: 2em 0em 0em 0em; } }
-  @media (max-width: 992px) and (min-width: 811px) {
+  @media (max-width: 992px) and (min-width: 820px) {
     .left-row {
       flex-direction: row;
       margin: 2em 0em 0em 0em; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .left-row {
       flex-direction: column;
       margin: 10px 0px 0px 0px; } }
@@ -426,11 +426,11 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     .right-row {
       flex-direction: row;
       margin: 0em 0em 0em 0em; } }
-  @media (max-width: 992px) and (min-width: 811px) {
+  @media (max-width: 992px) and (min-width: 820px) {
     .right-row {
       flex-direction: row;
       margin: 2em 0em 0em 0em; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .right-row {
       flex-direction: column-reverse;
       margin: 10px 0px 0px 0px; } }
@@ -459,7 +459,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   @media (width: 1600px) {
     .left-content {
       margin: 2em 0em 0em 9em; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .left-content {
       margin: 20px 0px 20px 0px;
       width: 100%;
@@ -485,7 +485,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
       margin: 1.5em 0em 0em 0em;
       width: 100%;
       height: 100%; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .right-content {
       margin: 20px 0px 20px 0px;
       width: 100%;
@@ -506,10 +506,10 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   @media (max-width: 992px) and (min-width: 812px) {
     #text-1, #text-2 {
       font-size: 14px; } }
-  @media (max-width: 992px) and (min-width: 811px) {
+  @media (max-width: 992px) and (min-width: 820px) {
     #text-1, #text-2 {
       font-size: 14px; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     #text-1, #text-2 {
       font-size: 14px; } }
 
@@ -526,7 +526,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     align-items: center;
     height: 70px;
     border-radius: 50%; }
-  @media (width: 811px) {
+  @media (width: 820px) {
     .logo {
       justify-content: center;
       align-items: center;
@@ -729,7 +729,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
       .upper-container iframe, .bottom-container iframe {
         width: 100%;
         height: 400px; } }
-    @media (width: 811px) {
+    @media (width: 820px) {
       .upper-container iframe, .bottom-container iframe {
         width: 100%;
         height: 100%;
@@ -758,12 +758,12 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   @media (max-width: 1600px) and (min-width: 1024px) {
     .services-text__container {
       text-align: center; } }
-  @media (max-width: 992px) and (min-width: 811px) {
+  @media (max-width: 992px) and (min-width: 820px) {
     .services-text__container {
       font-size: 14px;
       text-align: center;
       line-height: 1.5; } }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .services-text__container {
       font-size: 14px;
       text-align: center;
@@ -804,7 +804,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .form-text {
   font-size: 16px; }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .form-text {
       font-size: 14px; } }
 
@@ -850,7 +850,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .location {
   flex-direction: row; }
-  @media only screen and (max-width: 811px) {
+  @media only screen and (max-width: 820px) {
     .location {
       flex-direction: column; } }
   @media only screen and (orientation: landscape) {
@@ -937,10 +937,11 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 .basket {
   display: flex;
   width: 100%;
-  margin-bottom: 80px; }
-  @media screen and (max-width: 811px) {
+  margin-bottom: 245px; }
+  @media screen and (max-width: 820px) {
     .basket {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 610px; } }
   @media screen and (max-width: 1200px) {
     .basket {
       width: 100%; } }
@@ -955,7 +956,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   display: flex;
   width: 100%;
   gap: 1.5rem; }
-  @media screen and (max-width: 811px) {
+  @media screen and (max-width: 820px) {
     .cartContainer {
       flex-direction: column; } }
   @media screen and (max-width: 1200px) {
@@ -967,9 +968,9 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   color: var(--clr-main); }
 
 .cartProducts {
-  flex: 80%;
+  flex: 85%;
   gap: 1rem; }
-  @media (max-width: 811px) and (min-width: 0px) {
+  @media (max-width: 820px) and (min-width: 0px) {
     .cartProducts {
       padding: 0; } }
 
@@ -1006,22 +1007,24 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .right-basket {
   display: flex;
-  justify-content: space-between;
-  flex: 20%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 5%;
   padding: 20px;
-  height: 80px;
+  height: 230px;
   border: 1px solid #afafaf;
   border-radius: 7px;
   background: #bababa;
   box-shadow: rgba(0, 0, 0, 0.311) 0px 10px 20px 0px; }
-  @media screen and (max-width: 811px) {
+  @media screen and (max-width: 820px) {
     .right-basket {
       margin-bottom: 20px; } }
   .right-basket hr {
     margin-bottom: 25px; }
   .right-basket p {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 30px;
     font-size: 20px; }
   .right-basket a {
