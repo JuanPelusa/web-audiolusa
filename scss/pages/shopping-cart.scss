@@ -89,6 +89,7 @@
 
 .right-basket {
     display: flex;
+    justify-content: space-between;
     flex: 20%;
 	padding: 20px;
 	height:80px;
@@ -115,8 +116,9 @@
         font-weight: 400;
     }
     button {
-        width: 100%;
+        width: 60px;
         height: 40px;
+        font-size: $small;
         border: none;
         border-radius: 10px;
         background-color: forestgreen;

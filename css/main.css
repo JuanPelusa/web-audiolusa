@@ -1006,6 +1006,7 @@ h1, h2, h3, h4, h5, h6, li, p, a {
 
 .right-basket {
   display: flex;
+  justify-content: space-between;
   flex: 20%;
   padding: 20px;
   height: 80px;
@@ -1029,8 +1030,9 @@ h1, h2, h3, h4, h5, h6, li, p, a {
     text-align: center;
     font-weight: 400; }
   .right-basket button {
-    width: 100%;
+    width: 60px;
     height: 40px;
+    font-size: 14px;
     border: none;
     border-radius: 10px;
     background-color: forestgreen; }
