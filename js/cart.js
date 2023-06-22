@@ -7,6 +7,7 @@ const contProducts = document.querySelector('#productsInCart');
 let eraseButton = document.querySelectorAll('.eraseProduct');
 //const eraseAll = document.querySelector('#erase-cart');
 const contTotal = document.querySelector('#total');
+const buyButton = document.querySelector('#buyBasket');
 
 const currencyType = "usd";
 
@@ -96,6 +97,8 @@ function updateButtonsErase() {
 buyButton.addEventListener("click", buyBasket);
 
 function buyBasket() {
+
+
     productsInCart.lengh = 0;
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
 
