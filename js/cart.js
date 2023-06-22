@@ -65,24 +65,20 @@ function updateButtonsErase() {
 
         Toastify({
             text: "Product removed",
-            color: "#000000",
             duration: 2000,
             close: true,
             gravity: "top", // `top` or `bottom`
             position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-              background: "linear-gradient(to right, #ff0000, #d07609)",
-              borderRadius: "1rem",
-              textTransform: "uppercase",
-              fontSize: ".75rem"
+                color: "#000000",
+                background: "linear-gradient(to right, #ff0000, #ff3636)",
+                borderRadius: "1rem",
+                textTransform: "uppercase",
+                fontSize: ".75rem"
             },
-            offset: {
-                x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-                y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-              },
             onClick: function(){} // Callback after click
-          }).showToast();
+        }).showToast();
 
         const idButton = e.currentTarget.id;
         const index = productsInCart.findIndex(product => product.id === idButton);
