@@ -5,7 +5,7 @@ const contProducts = document.querySelector('#productsInCart');
 //const contenedorRightActions = document.querySelector("#rightActions");
 //const contenedorbuyCart = document.querySelector("#buyCart");
 let eraseButton = document.querySelectorAll('.eraseProduct');
-//const eraseAll = document.querySelector('#erase-cart');
+const eraseAll = document.querySelector('#removeCart');
 const contTotal = document.querySelector('#total');
 const buyButton = document.querySelector('#buyBasket');
 
@@ -134,6 +134,16 @@ function buyBasket() {
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
     loadProductsToCart()
 }
+
+eraseAll.addEventListener("click", removeCart);
+
+function removeCart() {
+    
+    productsInCart.length = 0;
+    localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
+    loadProductsToCart()
+}
+
 
 
 
