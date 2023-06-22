@@ -1,6 +1,6 @@
 let productsInCart = JSON.parse(localStorage.getItem("products-in-cart"));
 
-const contEmpty = document.querySelector('#emptycart');
+
 const contProducts = document.querySelector('#productsInCart');
 //const contenedorRightActions = document.querySelector("#rightActions");
 //const contenedorbuyCart = document.querySelector("#buyCart");
@@ -14,7 +14,6 @@ function loadProductsToCart() {
 
 if(productsInCart && productsInCart.length >= 0) {
 
-    contEmpty.classList.add('disabled');
     contProducts.classList.remove('disabled');
     contTotal.classList.remove("disable");
     
@@ -44,14 +43,12 @@ if(productsInCart && productsInCart.length >= 0) {
     }
     else{
 
-        contEmpty.classList.remove('disabled');
         contProducts.classList.add('disabled');
         contTotal.classList.add("disabled");
 
         
     };
-    
-    
+    updateTotal();
 }
 
 loadProductsToCart();
@@ -74,6 +71,19 @@ function updateButtonsErase() {
         localStorage.setItem('products-in-cart', JSON.stringify(productsInCart))
     }
     
+    function updateTotal() {
+        total.innerText = productsInCart.reduce((acc, product) => acc + (product.price * product.quantity), 0)
+    };
+
+buyButton.addEventListener("click", buyBasket);
+
+function buyBasket() {
+    productsInCart.lengh = 0;
+    localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
+
+    contProducts.classList.add('disabled');
+    contTotal.classList.remove('disabled');
+}
 
 
 
