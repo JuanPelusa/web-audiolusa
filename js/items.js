@@ -5,7 +5,7 @@ fetch("../js/products.json")
 .then(data => {
     products = data;
     loadProducts(products);
-})
+});
 
 const currencyType = "usd";
 
