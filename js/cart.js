@@ -27,7 +27,7 @@ if(productsInCart && productsInCart.length >= 0) {
         <div>
         <h5>${product.name}</h5>
         <p>${product.description}</p>
-        <h5>${currencyType} ${product.price}</h5>
+        <h5>${currencyType} ${product.price}.-</h5>
         </div>
         <p class"cartProductQuantity">Qty: 
         ${product.quantity}
@@ -48,6 +48,7 @@ if(productsInCart && productsInCart.length >= 0) {
         
     };
     updateTotal();
+    updateInCart();
 }
 
 loadProductsToCart();

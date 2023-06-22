@@ -31,7 +31,7 @@ function loadProducts(productChosen) {
         <p class="description">${product.description}</p>
         </div>
         <p class="info">${product.specs}</p>
-        <p class="infoPrice">${currencyType} ${product.price}
+        <p class="infoPrice">${currencyType} ${product.price}.-</p>
         <button class="add" id="${product.id}">BUY NOW</button>
         `;
 
