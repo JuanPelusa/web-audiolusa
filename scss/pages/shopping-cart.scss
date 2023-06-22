@@ -103,28 +103,20 @@
     @media screen and (max-width: $tablet) {
 		margin-bottom: 20px;
 	}
-    hr {
-        margin-bottom: 25px;
-    }
     p {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
         font-size: 20px;
-    }
-    a {
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-        font-weight: 400;
     }
     button {
         width: 60px;
         height: 40px;
+        margin-top: 40px;
         font-size: $small;
         border: none;
         border-radius: 10px;
-        background-color: forestgreen;
+        background-color: rgb(255, 120, 17);
             &:hover {
             transform: scaleY(1.07);
         }

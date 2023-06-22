@@ -97,6 +97,19 @@ function updateButtonsErase() {
 buyButton.addEventListener("click", buyBasket);
 
 function buyBasket() {
+    Swal.fire({
+        title: 'comfirm your purchase',
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'yes',
+        cancelButtonText: 'no'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            productsInCart.length = 0;
+            localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
+            loadProductsToCart();
+        }
+      })
 
     productsInCart.length = 0;
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));

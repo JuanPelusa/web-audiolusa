@@ -1020,24 +1020,18 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   @media screen and (max-width: 820px) {
     .right-basket {
       margin-bottom: 20px; } }
-  .right-basket hr {
-    margin-bottom: 25px; }
   .right-basket p {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-size: 20px; }
-  .right-basket a {
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400; }
   .right-basket button {
     width: 60px;
     height: 40px;
+    margin-top: 40px;
     font-size: 14px;
     border: none;
     border-radius: 10px;
-    background-color: forestgreen; }
+    background-color: #ff7811; }
     .right-basket button:hover {
       transform: scaleY(1.07); }
