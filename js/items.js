@@ -23,7 +23,7 @@ function loadProducts(productChosen) {
     productChosen.forEach(product => {
         
         const content = document.createElement("div");
-        content.classList.add('product-card')
+        content.classList.add('product-card', 'data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-out"')
         content.innerHTML =
         `<img src="${product.image}">
         <div>
