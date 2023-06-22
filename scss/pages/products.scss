@@ -117,13 +117,14 @@
 
 .add {
     @extend %buttons;
-    margin-top: 15px;
+    margin-top: 10px;
+    font-size: $medium;
+    border: 1px solid grey;
     background-color: #ff8c00;
     transition: all 200ms ease-in-out;
     &:hover {
         color: whitesmoke;
         background-color:forestgreen;
-        border: 1px solid white;
         cursor: pointer;
         transform: scale (1.5) ease-in-out;
         transform: translateY(-3px);

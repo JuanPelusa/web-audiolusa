@@ -682,13 +682,14 @@ h1, h2, h3, h4, h5, h6, li, p, a {
   font-weight: bolder; }
 
 .add {
-  margin-top: 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid grey;
   background-color: #ff8c00;
   transition: all 200ms ease-in-out; }
   .add:hover {
     color: whitesmoke;
     background-color: forestgreen;
-    border: 1px solid white;
     cursor: pointer;
     transform: scale 1.5 ease-in-out;
     transform: translateY(-3px);
