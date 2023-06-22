@@ -95,12 +95,9 @@ function updateButtonsErase() {
     };
 
 buyButton.addEventListener("click", buyBasket);
-
 function buyBasket() {
-    const idButton = e.currentTarget.id;
-    const index = productsInCart.findIndex(product => product.id === idButton);
-    productsInCart.splice(index, 1);
-    loadProductsToCart();
+
+    productsInCart.length >= 0;
     localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
 
     contProducts.classList.add('disabled');
