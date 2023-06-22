@@ -1,0 +1,82 @@
+[
+    {
+        "id": "B&W_09",
+        "name": "B&W Px8 007 Edition",
+        "description": "Headphones",
+        "specs": "",
+        "price": "1000",
+        "quantity": "1",
+        "image": "../images/px8_007_edition_midnight_blue-removebg-preview (1).png",
+        "total":"1000"
+    },
+    {
+        "id": "Focal_01",
+        "name": "Focal Maestro Utopia Evo",
+        "description": "Floorstanding loudspeaker",
+        "specs": "",
+        "price": "40000",
+        "quantity": "1",
+        "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
+        "total":"40000"
+    },
+    {
+        "id": "Focal_01",
+        "name": "Focal Maestro Utopia Evo",
+        "description": "Floorstanding loudspeaker",
+        "specs": "",
+        "price": "40000",
+        "quantity": "1",
+        "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
+        "total":"40000"
+    },
+    {
+        "id": "Focal_01",
+        "name": "Focal Maestro Utopia Evo",
+        "description": "Floorstanding loudspeaker",
+        "specs": "",
+        "price": "40000",
+        "quantity": "1",
+        "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
+        "total":"40000"
+    },
+    {
+        "id": "Focal_01",
+        "name": "Focal Maestro Utopia Evo",
+        "description": "Floorstanding loudspeaker",
+        "specs": "",
+        "price": "40000",
+        "quantity": "1",
+        "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
+        "total":"40000"
+    },
+    {
+        "id": "Focal_01",
+        "name": "Focal Maestro Utopia Evo",
+        "description": "Floorstanding loudspeaker",
+        "specs": "",
+        "price": "40000",
+        "quantity": "1",
+        "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
+        "total":"40000"
+    },
+    {
+        "id": "Focal_01",
+        "name": "Focal Maestro Utopia Evo",
+        "description": "Floorstanding loudspeaker",
+        "specs": "",
+        "price": "40000",
+        "quantity": "1",
+        "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
+        "total":"40000"
+    },
+    {
+        "id": "Focal_01",
+        "name": "Focal Maestro Utopia Evo",
+        "description": "Floorstanding loudspeaker",
+        "specs": "",
+        "price": "40000",
+        "quantity": "1",
+        "image": "../images/Maestro_Utopia_Evo_-_Focal-removebg-preview.png",
+        "total":"40000"
+    }
+]
