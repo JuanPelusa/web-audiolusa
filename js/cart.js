@@ -41,14 +41,13 @@ if(productsInCart && productsInCart.length >= 0) {
         contProducts.append(div)
     })
     updateButtonsErase()
-    buyBasket()
     }
     else{
 
         contProducts.classList.add('disabled');
         contTotal.classList.add("disabled");
 
-        
+        buyBasket()
     };
     updateTotal();
 }
