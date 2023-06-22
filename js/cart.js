@@ -48,7 +48,6 @@ if(productsInCart && productsInCart.length >= 0) {
         
     };
     updateTotal();
-    updateInCart();
 }
 
 loadProductsToCart();
