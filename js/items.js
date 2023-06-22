@@ -71,10 +71,10 @@ function addToCart(e) {
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to center, ##ff8c00, #785ce9)",
+          background: "linear-gradient(to right, ##ff8c00, #fbc056)",
           borderRadius: "2rem",
           textTransform: "uppercase",
-          fontSize: ".5rem"
+          fontSize: ".75rem"
         },
         offset: {
             x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
