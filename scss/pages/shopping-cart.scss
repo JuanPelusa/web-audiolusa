@@ -20,6 +20,7 @@
 }
 
 .cartContainer {
+    display: flex;
     gap: 1.5rem;
     @media screen and (max-width: $tablet) {
 		flex-direction: column;
